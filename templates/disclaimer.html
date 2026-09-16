@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Medical Disclaimer — Sanket SLD{% endblock %}
+
+{% block content %}
+<div class="header" style="margin-bottom: 1.5rem; text-align: center;">
+    <h1 class="page-title" style="color: var(--accent-red);">⚖️ Medical & Clinical Disclaimer</h1>
+    <p class="page-subtitle" style="color: var(--text-secondary);">Important information regarding digital screening tools.</p>
+</div>
+
+<div class="card" style="border-color: rgba(231, 76, 60, 0.4);">
+    <div style="background: rgba(231, 76, 60, 0.1); border: 1px solid var(--accent-red); border-radius: 8px; padding: 1.25rem; margin-bottom: 1.5rem;">
+        <h3 style="color: var(--accent-red); margin-top: 0; margin-bottom: 0.5rem;">⚠️ Screening Tool vs Medical Diagnosis</h3>
+        <p style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">
+            Sanket is a <strong>digital risk screening tool</strong> designed to assist educators, parents, and healthcare professionals in early identification of Specific Learning Disorder risk markers. <strong>Sanket is NOT a formal medical diagnosis.</strong>
+        </p>
+    </div>
+
+    <h3 style="color: var(--text-primary); margin-bottom: 0.6rem;">Clinical Recommendations:</h3>
+    <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li>A formal clinical diagnosis of Dyslexia, Dyscalculia, or Dysgraphia requires a comprehensive psychometric assessment conducted by a licensed Clinical Psychologist, Educational Psychologist, or Neuropsychologist.</li>
+        <li>Screening results produced by Sanket should be shared with qualified clinical specialists to guide further formal evaluation.</li>
+        <li>If high risk is indicated, early educational interventions and accommodations should be explored promptly in collaboration with certified specialists.</li>
+    </ul>
+
+    <div style="text-align: center; margin-top: 1rem;">
+        <a href="/test/sld" class="btn btn-primary" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+            I Understand — Proceed to Screening Hub ➔
+        </a>
+    </div>
+</div>
+{% endblock %}

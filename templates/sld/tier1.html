@@ -1,0 +1,346 @@
+{% extends "base.html" %}
+
+{% block title %}Tier 1 Precursor Screening (Ages 3-5) — SehatSaathi{% endblock %}
+
+{% block content %}
+<div class="header" style="margin-bottom: 1.5rem;">
+    <h1 class="page-title" style="color: #2ecc71;">🎮 Tier 1: Precursor Screening (Ages 3–5)</h1>
+    <p class="page-subtitle">Gamified pre-literate tasks assessing phonological, subitizing numerical, and visual-motor midline precursors.</p>
+    <div class="title-separator" style="background-color: #2ecc71;"></div>
+</div>
+
+<!-- Game Container Card -->
+<div class="card" style="max-width: 800px; margin: 0 auto; border-color: rgba(46, 204, 113, 0.4); padding: 1.5rem;">
+    
+    <!-- Progress Indicator -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem;">
+        <span id="game-step-label" style="font-weight: 700; color: #2ecc71; font-size: 1rem;">Task 1 of 3: Rhyme Sound Game 🎵</span>
+        <span id="reward-stars" style="font-size: 1.2rem;">⭐⭐⭐</span>
+    </div>
+
+    <!-- TASK 1: Rhyme Game -->
+    <div id="task-rhyme-section" style="display: block;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+            <button id="btn-play-prompt" class="btn" style="background: rgba(46,204,113,0.2); border: 2px solid #2ecc71; color: #2ecc71; font-size: 1.2rem; padding: 0.8rem 1.5rem; border-radius: 30px; font-weight: 700;">
+                🔊 Tap to Listen Prompt
+            </button>
+            <h2 id="rhyme-prompt-text" style="font-size: 1.5rem; margin-top: 1rem; color: white;">Which word rhymes with Cat?</h2>
+        </div>
+
+        <div id="rhyme-options-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+            <!-- Dynamic choice cards -->
+        </div>
+    </div>
+
+    <!-- TASK 2: Subitizing Task -->
+    <div id="task-subitizing-section" style="display: none; text-align: center;">
+        <h2 style="font-size: 1.3rem; color: white; margin-bottom: 0.5rem;">Quick Count! How many items did you see?</h2>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Tap the matching quantity button as fast as you can!</p>
+        
+        <!-- Flash Display Area -->
+        <div id="subitizing-flash-box" style="width: 260px; height: 180px; margin: 0 auto 1.5rem auto; background: rgba(0,0,0,0.5); border: 3px dashed #2ecc71; border-radius: 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 15px; padding: 15px;">
+            <span id="flash-placeholder" style="color: var(--text-muted); font-size: 0.9rem;">Ready? Tap Flash!</span>
+        </div>
+
+        <button id="btn-start-flash" class="btn" style="background: #2ecc71; color: black; font-weight: 800; font-size: 1.1rem; padding: 0.6rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+            ⚡ Flash Quantity Now
+        </button>
+
+        <div id="subitizing-num-buttons" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn sub-num-btn" data-val="1" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 800; border-radius: 50%; background: rgba(255,255,255,0.1); border: 2px solid #2ecc71; color: white;">1</button>
+            <button class="btn sub-num-btn" data-val="2" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 800; border-radius: 50%; background: rgba(255,255,255,0.1); border: 2px solid #2ecc71; color: white;">2</button>
+            <button class="btn sub-num-btn" data-val="3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 800; border-radius: 50%; background: rgba(255,255,255,0.1); border: 2px solid #2ecc71; color: white;">3</button>
+            <button class="btn sub-num-btn" data-val="4" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 800; border-radius: 50%; background: rgba(255,255,255,0.1); border: 2px solid #2ecc71; color: white;">4</button>
+        </div>
+    </div>
+
+    <!-- TASK 3: Motor Midline Tracing Task -->
+    <div id="task-motor-section" style="display: none; text-align: center;">
+        <h2 id="motor-instruction-text" style="font-size: 1.2rem; color: white; margin-bottom: 0.5rem;">Trace the glowing line across the center!</h2>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">Hold mouse/finger and drag smoothly from the left star to the right star.</p>
+
+        <div style="position: relative; display: inline-block;">
+            <canvas id="motor-canvas" width="600" height="240" style="background: rgba(0,0,0,0.6); border: 2px solid #2ecc71; border-radius: 12px; touch-action: none; cursor: crosshair;"></canvas>
+        </div>
+
+        <div style="margin-top: 1rem;">
+            <button id="btn-reset-tracing" class="btn" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: white; margin-right: 1rem;">
+                🔄 Reset Path
+            </button>
+            <button id="btn-finish-tier1" class="btn" style="background: linear-gradient(135deg, #2ecc71, #27ae60); color: white; font-weight: 800; padding: 0.7rem 1.5rem; font-size: 1.1rem;">
+                Finish & Calculate Risk ➔
+            </button>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const intake = JSON.parse(localStorage.getItem('sld_intake') || '{}');
+    const selectedLang = intake.lang || 'en';
+
+    let tier1Content = null;
+    let rhymeIdx = 0;
+    let rhymeResults = [];
+    let rhymeStartTime = 0;
+
+    let subitizingIdx = 0;
+    let subitizingResults = [];
+    let subitizingFlashTime = 0;
+    let currentSubItem = null;
+
+    let motorPoints = [];
+    let motorStartTime = 0;
+    let midlinePauseSec = 0.0;
+
+    // Fetch Tier 1 Content Bank
+    fetch(`/api/sld/content/1?lang=${selectedLang}`)
+        .then(r => r.json())
+        .then(data => {
+            tier1Content = data.content || data;
+            initRhymeGame();
+        });
+
+    // ── 1. Rhyme Game Functions ──
+    function initRhymeGame() {
+        if (!tier1Content || !tier1Content.rhyme_game) return;
+        const item = tier1Content.rhyme_game[rhymeIdx];
+        if (!item) {
+            // Move to Subitizing Task
+            document.getElementById('task-rhyme-section').style.display = 'none';
+            document.getElementById('task-subitizing-section').style.display = 'block';
+            document.getElementById('game-step-label').innerText = 'Task 2 of 3: Subitizing Quantity Task ⚡';
+            initSubitizingTask();
+            return;
+        }
+
+        document.getElementById('rhyme-prompt-text').innerText = item.prompt_audio_text;
+        const grid = document.getElementById('rhyme-options-grid');
+        grid.innerHTML = '';
+
+        item.options.forEach(opt => {
+            const card = document.createElement('div');
+            card.style.cssText = "background: rgba(255,255,255,0.05); border: 2px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 1.25rem; text-align: center; cursor: pointer; transition: all 0.2s ease;";
+            card.innerHTML = `<div style="font-size: 3.5rem; margin-bottom: 0.5rem;">${opt.emoji}</div><div style="font-size: 1.2rem; font-weight: 700; color: white;">${opt.word}</div>`;
+            
+            card.addEventListener('click', () => {
+                const elapsedSec = (performance.now() - rhymeStartTime) / 1000.0;
+                rhymeResults.push({
+                    id: item.id,
+                    correct: opt.correct,
+                    time_sec: elapsedSec
+                });
+                rhymeIdx++;
+                initRhymeGame();
+            });
+            grid.appendChild(card);
+        });
+
+        rhymeStartTime = performance.now();
+    }
+
+    document.getElementById('btn-play-prompt').addEventListener('click', () => {
+        const item = tier1Content.rhyme_game[rhymeIdx];
+        if (item && 'speechSynthesis' in window) {
+            const utter = new SpeechSynthesisUtterance(item.prompt_audio_text);
+            utter.lang = selectedLang === 'hi' ? 'hi-IN' : 'en-US';
+            window.speechSynthesis.speak(utter);
+        }
+    });
+
+    // ── 2. Subitizing Task Functions ──
+    function initSubitizingTask() {
+        if (!tier1Content || !tier1Content.subitizing_game) return;
+        currentSubItem = tier1Content.subitizing_game[subitizingIdx];
+        if (!currentSubItem) {
+            // Move to Motor Task
+            document.getElementById('task-subitizing-section').style.display = 'none';
+            document.getElementById('task-motor-section').style.display = 'block';
+            document.getElementById('game-step-label').innerText = 'Task 3 of 3: Motor Midline Tracing ✏️';
+            initMotorTask();
+            return;
+        }
+        document.getElementById('flash-placeholder').innerText = `Ready for Trial ${subitizingIdx + 1} of ${tier1Content.subitizing_game.length}? Tap Flash!`;
+    }
+
+    document.getElementById('btn-start-flash').addEventListener('click', () => {
+        if (!currentSubItem) return;
+        const box = document.getElementById('subitizing-flash-box');
+        box.innerHTML = '';
+        for (let i = 0; i < currentSubItem.count; i++) {
+            const itemSpan = document.createElement('span');
+            itemSpan.style.cssText = "font-size: 3rem;";
+            itemSpan.innerText = currentSubItem.shape;
+            box.appendChild(itemSpan);
+        }
+
+        subitizingFlashTime = performance.now();
+
+        setTimeout(() => {
+            box.innerHTML = '<span style="color: var(--text-muted); font-size: 1.1rem; font-weight: 700;">?</span>';
+        }, currentSubItem.display_ms || 700);
+    });
+
+    document.querySelectorAll('.sub-num-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (!currentSubItem || subitizingFlashTime === 0) return;
+            const chosenVal = intVal = parseInt(btn.getAttribute('data-val'));
+            const elapsedSec = (performance.now() - subitizingFlashTime) / 1000.0;
+
+            subitizingResults.push({
+                id: currentSubItem.id,
+                correct: chosenVal === currentSubItem.count,
+                time_sec: elapsedSec
+            });
+
+            subitizingFlashTime = 0;
+            subitizingIdx++;
+            initSubitizingTask();
+        });
+    });
+
+    // ── 3. Motor Midline Tracing Task Functions ──
+    const canvas = document.getElementById('motor-canvas');
+    const ctx = canvas.getContext('2d');
+    let isDrawing = false;
+
+    function drawReferencePath() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw reference arc/wave crossing midline (x = 300)
+        ctx.beginPath();
+        ctx.strokeStyle = "rgba(46, 204, 113, 0.4)";
+        ctx.lineWidth = 14;
+        ctx.lineCap = "round";
+
+        ctx.moveTo(40, 120);
+        ctx.bezierCurveTo(150, 40, 450, 200, 560, 120);
+        ctx.stroke();
+
+        // Start star (Left) & End star (Right)
+        ctx.font = "30px sans-serif";
+        ctx.fillText("⭐", 20, 130);
+        ctx.fillText("🏁", 550, 130);
+
+        // Midline indicator line
+        ctx.beginPath();
+        ctx.setLineDash([5, 5]);
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+        ctx.lineWidth = 2;
+        ctx.moveTo(300, 0);
+        ctx.lineTo(300, 240);
+        ctx.stroke();
+        ctx.setLineDash([]);
+    }
+
+    function initMotorTask() {
+        drawReferencePath();
+        if (tier1Content && tier1Content.motor_midline) {
+            document.getElementById('motor-instruction-text').innerText = tier1Content.motor_midline.instruction;
+        }
+    }
+
+    function getCanvasCoords(e) {
+        const rect = canvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return {
+            x: clientX - rect.left,
+            y: clientY - rect.top,
+            time: performance.now()
+        };
+    }
+
+    function startDraw(e) {
+        isDrawing = true;
+        motorPoints = [];
+        motorStartTime = performance.now();
+        const pos = getCanvasCoords(e);
+        motorPoints.push(pos);
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#2ecc71";
+        ctx.lineWidth = 6;
+        ctx.moveTo(pos.x, pos.y);
+    }
+
+    function moveDraw(e) {
+        if (!isDrawing) return;
+        const pos = getCanvasCoords(e);
+        motorPoints.push(pos);
+
+        ctx.lineTo(pos.x, pos.y);
+        ctx.stroke();
+    }
+
+    function stopDraw() {
+        if (!isDrawing) return;
+        isDrawing = false;
+    }
+
+    canvas.addEventListener('mousedown', startDraw);
+    canvas.addEventListener('mousemove', moveDraw);
+    canvas.addEventListener('mouseup', stopDraw);
+
+    canvas.addEventListener('touchstart', startDraw);
+    canvas.addEventListener('touchmove', moveDraw);
+    canvas.addEventListener('touchend', stopDraw);
+
+    document.getElementById('btn-reset-tracing').addEventListener('click', () => {
+        motorPoints = [];
+        drawReferencePath();
+    });
+
+    document.getElementById('btn-finish-tier1').addEventListener('click', () => {
+        // Calculate motor metrics
+        const completionTimeSec = motorPoints.length > 0 ? (motorPoints[motorPoints.length - 1].time - motorStartTime) / 1000.0 : 5.0;
+        
+        // Calculate deviation from reference curve: y_ref(x)
+        let totalDev = 0;
+        let midlinePoints = [];
+
+        motorPoints.forEach(pt => {
+            // Approx curve y(x) = 120 + 80 * sin((pt.x - 40) / 520 * Math.PI * 2)
+            const expectedY = 120 + Math.sin((pt.x - 40) / 520 * Math.PI) * 70;
+            totalDev += Math.abs(pt.y - expectedY);
+
+            if (Math.abs(pt.x - 300) < 30) {
+                midlinePoints.push(pt);
+            }
+        });
+
+        const avgDevPx = motorPoints.length > 0 ? totalDev / motorPoints.length : 15.0;
+
+        // Calculate pause duration near midline (x approx 300)
+        let midlinePause = 0.0;
+        if (midlinePoints.length > 2) {
+            midlinePause = (midlinePoints[midlinePoints.length - 1].time - midlinePoints[0].time) / 1000.0;
+        }
+
+        const payload = {
+            rhyme_results: rhymeResults,
+            subitizing_results: subitizingResults,
+            motor_results: {
+                avg_deviation_px: avgDevPx,
+                midline_pause_sec: midlinePause,
+                completion_time_sec: completionTimeSec
+            }
+        };
+
+        fetch('/api/sld/analyze/tier1', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(payload)
+        })
+        .then(r => r.json())
+        .then(res => {
+            localStorage.setItem('sld_tier1_results', JSON.stringify(res));
+            window.location.href = '/test/sld/results';
+        });
+    });
+});
+</script>
+{% endblock %}

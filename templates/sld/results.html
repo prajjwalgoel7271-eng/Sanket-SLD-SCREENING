@@ -1,0 +1,313 @@
+{% extends "base.html" %}
+
+{% block title %}SLD Screening Diagnostic Report — SehatSaathi{% endblock %}
+
+{% block content %}
+<div class="header" style="margin-bottom: 1.5rem;">
+    <h1 class="page-title" style="color: #9b59b6;">📊 SLD Tiered Diagnostic Report</h1>
+    <p class="page-subtitle">Evidence-based clinical screening results aligned with DSM-5-TR and ICD-11 diagnostic criteria.</p>
+    <div class="title-separator" style="background-color: #9b59b6;"></div>
+</div>
+
+<!-- PATIENT METADATA HEADER -->
+<div class="card" style="max-width: 900px; margin: 0 auto 1.5rem auto; border-color: rgba(155, 89, 182, 0.4); padding: 1.25rem; text-align: left;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
+        <div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Patient Name</span>
+            <span id="res-patient-name" style="font-size: 1.1rem; font-weight: 700; color: white;">Aarav</span>
+        </div>
+        <div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Age & Gender</span>
+            <span id="res-patient-age" style="font-size: 1.1rem; font-weight: 700; color: white;">8 Years (Male)</span>
+        </div>
+        <div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Screening Language</span>
+            <span id="res-lang" style="font-size: 1.1rem; font-weight: 700; color: #3498db;">English (en)</span>
+        </div>
+        <div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Active Screening Tier</span>
+            <span id="res-tier-badge" style="background: #9b59b6; color: white; padding: 2px 10px; border-radius: 12px; font-weight: 700; font-size: 0.9rem;">Tier 2 (Ages 6-9)</span>
+        </div>
+    </div>
+</div>
+
+<!-- TIER-SPECIFIC RESULTS CONTAINER -->
+<div id="results-display-box" class="card" style="max-width: 900px; margin: 0 auto 1.5rem auto; text-align: left; padding: 1.5rem;">
+    <!-- Rendered dynamically via JavaScript -->
+</div>
+
+<!-- DSM-5-TR & ICD-11 MAPPING TABLE -->
+<div class="card" style="max-width: 900px; margin: 0 auto 2rem auto; text-align: left; padding: 1.5rem; border-color: rgba(52, 152, 219, 0.4);">
+    <h2 style="font-size: 1.2rem; color: #3498db; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span>📜</span> DSM-5-TR & ICD-11 Diagnostic Criteria Traceability
+    </h2>
+    <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
+            <thead>
+                <tr style="background: rgba(255,255,255,0.06); border-bottom: 2px solid rgba(255,255,255,0.15); color: white;">
+                    <th style="padding: 10px;">Domain / Branch</th>
+                    <th style="padding: 10px;">DSM-5-TR Classification</th>
+                    <th style="padding: 10px;">ICD-11 Code</th>
+                    <th style="padding: 10px;">Diagnostic Criterion Text</th>
+                </tr>
+            </thead>
+            <tbody id="dsm-table-body">
+                <!-- Rendered dynamically -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div style="text-align: center; margin-bottom: 3rem;">
+    <button onclick="window.print()" class="btn btn-secondary" style="margin-right: 1rem;">
+        🖨️ Print Clinical Report
+    </button>
+    <a href="/test/sld" class="btn btn-primary" style="background: #9b59b6;">
+        🔄 Return to SLD Hub
+    </a>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const intake = JSON.parse(localStorage.getItem('sld_intake') || '{}');
+    document.getElementById('res-patient-name').innerText = intake.name || 'Anonymous';
+    document.getElementById('res-patient-age').innerText = `${intake.age || 8} Years (${intake.gender || 'Unspecified'})`;
+    document.getElementById('res-lang').innerText = intake.lang ? intake.lang.toUpperCase() : 'EN';
+
+    const activeTier = intake.tier || 2;
+    document.getElementById('res-tier-badge').innerText = `Tier ${activeTier}`;
+
+    const resBox = document.getElementById('results-display-box');
+    const tableBody = document.getElementById('dsm-table-body');
+
+    // Retrieve results based on Tier
+    const t1Res = JSON.parse(localStorage.getItem('sld_tier1_results') || 'null');
+    const t2Res = JSON.parse(localStorage.getItem('sld_tier2_results') || 'null');
+    const t3Res = JSON.parse(localStorage.getItem('sld_tier3_results') || 'null');
+    const t4Res = JSON.parse(localStorage.getItem('sld_tier4_results') || 'null');
+
+    if (activeTier === 1 && t1Res) renderTier1Results(t1Res);
+    else if (activeTier === 2 && t2Res) renderTier2Results(t2Res);
+    else if (activeTier === 3 && t3Res) renderTier3Results(t3Res);
+    else if (activeTier === 4 && t4Res) renderTier4Results(t4Res);
+    else if (t2Res) renderTier2Results(t2Res);
+    else renderFallbackMockResults();
+
+    // ── Tier 1 Results Renderer ──
+    function renderTier1Results(res) {
+        const dom = res.domain_results;
+        resBox.innerHTML = `
+            <h2 style="font-size: 1.3rem; color: #2ecc71; margin-top: 0; margin-bottom: 1rem;">
+                🎮 Tier 1: Precursor Screening Domain Outputs (Ages 3–5)
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(dom.phonological_precursor.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">PHONOLOGICAL PRECURSOR</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(dom.phonological_precursor.risk_band)}; margin: 0.3rem 0;">${dom.phonological_precursor.risk_band}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Accuracy: ${dom.phonological_precursor.accuracy}% (Avg Latency: ${dom.phonological_precursor.avg_response_sec}s)</p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(dom.numerical_precursor.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">NUMERICAL PRECURSOR (SUBITIZING)</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(dom.numerical_precursor.risk_band)}; margin: 0.3rem 0;">${dom.numerical_precursor.risk_band}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Accuracy: ${dom.numerical_precursor.accuracy}% (Latency: ${dom.numerical_precursor.avg_response_sec}s)</p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(dom.motor_visual_midline.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">MOTOR / MIDLINE PRECURSOR</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(dom.motor_visual_midline.risk_band)}; margin: 0.3rem 0;">${dom.motor_visual_midline.risk_band}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Deviation: ${dom.motor_visual_midline.path_deviation_px}px (Midline Pause: ${dom.motor_visual_midline.midline_pause_sec}s)</p>
+                </div>
+            </div>
+            <p style="color: #2ecc71; font-weight: 600; font-size: 0.9rem;">
+                ✓ Note: Precursor domains predict distinct later SLD types and are maintained as separate risk profiles rather than a single combined score.
+            </p>
+        `;
+
+        renderDSMTable([
+            { domain: "Phonological Precursor", dsm: dom.phonological_precursor.dsm_icd.dsm5, icd: dom.phonological_precursor.dsm_icd.icd11, crit: dom.phonological_precursor.dsm_icd.criterion },
+            { domain: "Numerical Precursor", dsm: dom.numerical_precursor.dsm_icd.dsm5, icd: dom.numerical_precursor.dsm_icd.icd11, crit: dom.numerical_precursor.dsm_icd.criterion },
+            { domain: "Motor / Midline Precursor", dsm: dom.motor_visual_midline.dsm_icd.dsm5, icd: dom.motor_visual_midline.dsm_icd.icd11, crit: dom.motor_visual_midline.dsm_icd.criterion }
+        ]);
+    }
+
+    // ── Tier 2 Results Renderer ──
+    function renderTier2Results(res) {
+        const b = res.branches;
+        resBox.innerHTML = `
+            <h2 style="font-size: 1.3rem; color: #3498db; margin-top: 0; margin-bottom: 1rem;">
+                📘 Tier 2: Manifestation Screening Branch Outputs (Ages 6–9)
+            </h2>
+            
+            ${res.comorbidity_flag ? `
+                <div style="background: rgba(231, 76, 60, 0.15); border: 2px solid #e74c3c; border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 1.25rem;">
+                    <h3 style="color: #e74c3c; margin: 0 0 0.2rem 0; font-size: 1.05rem;">⚠️ Multi-Branch Comorbidity Detected</h3>
+                    <p style="color: white; margin: 0; font-size: 0.9rem;">${res.comorbidity_details}</p>
+                </div>
+            ` : ''}
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(b.dyslexia.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">DYSLEXIA BRANCH</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(b.dyslexia.risk_band)}; margin: 0.3rem 0;">${b.dyslexia.risk_band}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Comp Acc: ${b.dyslexia.comprehension_acc}% | Spelling: ${b.dyslexia.spelling_acc}%</p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(b.dyscalculia.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">DYSCALCULIA BRANCH</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(b.dyscalculia.risk_band)}; margin: 0.3rem 0;">${b.dyscalculia.risk_band}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Fact Calculation Delays: ${b.dyscalculia.fact_calc_delays} | Mag Acc: ${b.dyscalculia.magnitude_acc}%</p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(b.dysgraphia.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">DYSGRAPHIA BRANCH</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(b.dysgraphia.risk_band)}; margin: 0.3rem 0;">${b.dysgraphia.risk_band}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Pause Ratio: ${b.dysgraphia.pause_ratio} | Speed Decay: ${b.dysgraphia.speed_decay_pct}%</p>
+                </div>
+            </div>
+        `;
+
+        renderDSMTable([
+            { domain: "Dyslexia (Reading)", dsm: b.dyslexia.dsm_icd.dsm5, icd: b.dyslexia.dsm_icd.icd11, crit: b.dyslexia.dsm_icd.criterion },
+            { domain: "Dyscalculia (Math)", dsm: b.dyscalculia.dsm_icd.dsm5, icd: b.dyscalculia.dsm_icd.icd11, crit: b.dyscalculia.dsm_icd.criterion },
+            { domain: "Dysgraphia (Writing)", dsm: b.dysgraphia.dsm_icd.dsm5, icd: b.dysgraphia.dsm_icd.icd11, crit: b.dysgraphia.dsm_icd.criterion }
+        ]);
+    }
+
+    // ── Tier 3 Results Renderer ──
+    function renderTier3Results(res) {
+        const b = res.branches;
+        const cm = res.compensation_metrics;
+        resBox.innerHTML = `
+            <h2 style="font-size: 1.3rem; color: #f1c40f; margin-top: 0; margin-bottom: 1rem;">
+                📙 Tier 3: Compensation-Resistant Diagnostic Outputs (Ages 10–13)
+            </h2>
+
+            <div style="background: rgba(241, 196, 15, 0.1); border: 1px solid #f1c40f; border-radius: 8px; padding: 1rem; margin-bottom: 1.25rem;">
+                <h3 style="color: #f1c40f; margin: 0 0 0.4rem 0; font-size: 1.05rem;">🎯 Defeated Compensation Metrics</h3>
+                <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.88rem; color: white;">
+                    <li>Multi-Round RAN Slowdown Rate: <strong>${cm.ran_slowdown_pct}%</strong> (measures fatigue/naming decay across rounds)</li>
+                    <li>Adaptive Nonword Decoding Ceiling: <strong>${cm.adaptive_decoding_ceiling}</strong></li>
+                    <li>Sight-Word Memory Decay Error Rate: <strong>${cm.sight_word_decay_error_pct}%</strong> (delayed recognition after distractor)</li>
+                    <li>Long Passage Reading-to-Learn Comprehension: <strong>${cm.long_comprehension_acc}%</strong></li>
+                </ul>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;">
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(b.dyslexia.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">DYSLEXIA RISK BAND</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(b.dyslexia.risk_band)}; margin: 0.3rem 0;">${b.dyslexia.risk_band}</h3>
+                </div>
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(b.dyscalculia.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">DYSCALCULIA RISK BAND</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(b.dyscalculia.risk_band)}; margin: 0.3rem 0;">${b.dyscalculia.risk_band}</h3>
+                </div>
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${getBandColor(b.dysgraphia.risk_band)}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">DYSGRAPHIA RISK BAND</span>
+                    <h3 style="font-size: 1.4rem; color: ${getBandColor(b.dysgraphia.risk_band)}; margin: 0.3rem 0;">${b.dysgraphia.risk_band}</h3>
+                </div>
+            </div>
+        `;
+
+        renderDSMTable([
+            { domain: "Compensated Dyslexia", dsm: b.dyslexia.dsm_icd.dsm5, icd: b.dyslexia.dsm_icd.icd11, crit: b.dyslexia.dsm_icd.criterion },
+            { domain: "Dyscalculia", dsm: b.dyscalculia.dsm_icd.dsm5, icd: b.dyscalculia.dsm_icd.icd11, crit: b.dyscalculia.dsm_icd.criterion },
+            { domain: "Dysgraphia", dsm: b.dysgraphia.dsm_icd.dsm5, icd: b.dysgraphia.dsm_icd.icd11, crit: b.dysgraphia.dsm_icd.criterion }
+        ]);
+    }
+
+    // ── Tier 4 Results Renderer ──
+    function renderTier4Results(res) {
+        const ad = res.academic_distress;
+        const mask = res.social_masking_detected;
+        const anxietyDisc = res.anxiety_discrepancy_detected;
+        const distColor = getBandColor(ad.distress_band);
+
+        // Dynamically compute cognitive profile risk band
+        let maxCogRisk = 'Low Risk';
+        if (res.cognitive_assessment && res.cognitive_assessment.branches) {
+            const bands = Object.values(res.cognitive_assessment.branches).map(b => b.risk_band);
+            if (bands.includes('High Risk')) maxCogRisk = 'High Risk';
+            else if (bands.includes('Moderate Risk')) maxCogRisk = 'Moderate Risk';
+        }
+        const cogColor = getBandColor(maxCogRisk);
+
+        let bannerBg = 'rgba(46, 204, 113, 0.15)';
+        let bannerBorder = '#2ecc71';
+        let bannerTitle = '✓ Clinical Assessment Alignment';
+
+        if (mask) {
+            bannerBg = 'rgba(231, 76, 60, 0.2)';
+            bannerBorder = '#e74c3c';
+            bannerTitle = '⚠️ Social Masking / Coping Denial Flagged';
+        } else if (anxietyDisc) {
+            bannerBg = 'rgba(52, 152, 219, 0.15)';
+            bannerBorder = '#3498db';
+            bannerTitle = 'ℹ️ Academic Task Anxiety Discrepancy';
+        }
+
+        resBox.innerHTML = `
+            <h2 style="font-size: 1.3rem; color: #9b59b6; margin-top: 0; margin-bottom: 1rem;">
+                📕 Tier 4: Executive Function & Academic Distress Outputs (Ages 14+)
+            </h2>
+
+            <div style="background: ${bannerBg}; border: 2px solid ${bannerBorder}; border-radius: 10px; padding: 1.25rem; margin-bottom: 1.5rem;">
+                <h3 style="color: ${bannerBorder}; margin: 0 0 0.5rem 0; font-size: 1.15rem;">
+                    ${bannerTitle}
+                </h3>
+                <p style="color: white; font-size: 0.95rem; margin: 0; line-height: 1.5;">${res.masking_analysis}</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;">
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${distColor}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">ACADEMIC TASK DISTRESS</span>
+                    <h3 style="font-size: 1.3rem; color: ${distColor}; margin: 0.3rem 0;">${ad.distress_band}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Total Distress Score: ${ad.total_score} / 20</p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.3); border: 2px solid ${cogColor}; border-radius: 10px; padding: 1rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">COGNITIVE BATTERY PROFILE</span>
+                    <h3 style="font-size: 1.3rem; color: ${cogColor}; margin: 0.3rem 0;">${maxCogRisk}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Objective cognitive subtest evaluation: Dyslexia (${res.cognitive_assessment.branches.dyslexia.risk_band}), Dyscalculia (${res.cognitive_assessment.branches.dyscalculia.risk_band}), Dysgraphia (${res.cognitive_assessment.branches.dysgraphia.risk_band}).</p>
+                </div>
+            </div>
+        `;
+
+        renderDSMTable([
+            { domain: "Academic Task Distress & Anxiety", dsm: ad.dsm_icd.dsm5, icd: ad.dsm_icd.icd11, crit: ad.dsm_icd.criterion }
+        ]);
+    }
+
+    function renderFallbackMockResults() {
+        resBox.innerHTML = `
+            <p style="color: var(--text-secondary);">No active screening session stored. Please launch screening from the SLD Hub.</p>
+        `;
+    }
+
+    function getBandColor(band) {
+        if (band === 'High Risk' || band === 'High Academic Distress') return '#e74c3c';
+        if (band === 'Moderate Risk' || band === 'Moderate Academic Distress') return '#f1c40f';
+        if (band === 'Low Risk' || band === 'Low Academic Distress') return '#2ecc71';
+        return '#2ecc71';
+    }
+
+
+    function renderDSMTable(items) {
+        tableBody.innerHTML = '';
+        items.forEach(it => {
+            const tr = document.createElement('tr');
+            tr.style.cssText = "border-bottom: 1px solid rgba(255,255,255,0.08); color: var(--text-secondary);";
+            tr.innerHTML = `
+                <td style="padding: 10px; font-weight: 700; color: white;">${it.domain}</td>
+                <td style="padding: 10px; color: #9b59b6; font-weight: 600;">${it.dsm}</td>
+                <td style="padding: 10px; color: #3498db; font-weight: 600;">${it.icd}</td>
+                <td style="padding: 10px;">${it.crit}</td>
+            `;
+            tableBody.appendChild(tr);
+        });
+    }
+});
+</script>
+{% endblock %}

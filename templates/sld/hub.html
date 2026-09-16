@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+
+{% block title %}SLD Age-Tiered Screening Hub — SehatSaathi{% endblock %}
+
+{% block content %}
+<div class="header" style="margin-bottom: 2rem;">
+    <h1 class="page-title">🧠 Specific Learning Disorder (SLD) Screening</h1>
+    <p class="page-subtitle">Evidence-based age-tiered screening system aligned with DSM-5-TR & ICD-11 criteria.</p>
+    <div class="title-separator" style="background-color: #9b59b6;"></div>
+</div>
+
+<!-- STEP 1: PROMINENT AGE INTAKE CARD -->
+<div class="card" style="max-width: 750px; margin: 0 auto 2rem auto; border: 2px solid #9b59b6; padding: 2rem; text-align: left; background: rgba(155, 89, 182, 0.05); box-shadow: 0 10px 30px rgba(155, 89, 182, 0.15);">
+    
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+        <span style="font-size: 1.8rem; background: #9b59b6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800;">1</span>
+        <div>
+            <h2 style="font-size: 1.35rem; font-weight: 800; margin: 0; color: white;">Enter Patient / Child Age First</h2>
+            <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">System automatically calibrates tests and routes to Tier 1, 2, 3, or 4.</p>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
+        <!-- Age Input -->
+        <div style="grid-column: span 1;">
+            <label for="sld-age" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; color: #9b59b6;">Child / Student Age (Years)*</label>
+            <input type="number" id="sld-age" min="3" max="18" value="8" style="width: 100%; background: var(--bg-dark); border: 2px solid #9b59b6; color: white; padding: 0.75rem 1rem; border-radius: 8px; font-family: Outfit; font-size: 1.3rem; font-weight: 800; text-align: center;" required>
+        </div>
+
+        <!-- Language Selector -->
+        <div>
+            <label for="sld-lang" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; color: #3498db;">Test Language*</label>
+            <select id="sld-lang" style="width: 100%; background: var(--bg-dark); border: 1px solid #3498db; color: white; padding: 0.75rem 1rem; border-radius: 8px; font-family: Outfit; font-size: 1rem; font-weight: 600;">
+                <option value="en" selected>English (English)</option>
+                <option value="hi">हिंदी (Hindi)</option>
+                <option value="bho">भोजपुरी (Bhojpuri)</option>
+                <option value="bn">বাংলা (Bengali)</option>
+                <option value="ta">தமிழ் (Tamil)</option>
+                <option value="te">తెలుగు (Telugu)</option>
+                <option value="mr">मराठी (Marathi)</option>
+                <option value="gu">ગુજરાતી (Gujarati)</option>
+                <option value="kn"><ctrl42><ctrl42>ಕನ್ನಡ (Kannada)</option>
+                <option value="ml">മലയാളം (Malayalam)</option>
+                <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+            </select>
+        </div>
+
+        <!-- Optional Name -->
+        <div>
+            <label for="sld-name" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-secondary);">Child / Patient Name (Optional)</label>
+            <input type="text" id="sld-name" placeholder="e.g., Aarav" style="width: 100%; background: var(--bg-dark); border: 1px solid var(--border-color); color: white; padding: 0.7rem 1rem; border-radius: 8px; font-family: Outfit; font-size: 1rem;">
+        </div>
+
+        <!-- Optional Gender -->
+        <div>
+            <label for="sld-gender" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-secondary);">Gender (Optional)</label>
+            <select id="sld-gender" style="width: 100%; background: var(--bg-dark); border: 1px solid var(--border-color); color: white; padding: 0.7rem 1rem; border-radius: 8px; font-family: Outfit; font-size: 1rem;">
+                <option value="unspecified">Unspecified / Rather not say</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- STEP 2: AUTOMATIC TIER CALIBRATION BANNER -->
+    <div id="tier-calibration-banner" style="background: rgba(155, 89, 182, 0.15); border: 2px solid #9b59b6; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem;">
+        <div style="display: flex; items-align: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <span id="tier-badge" style="background: #9b59b6; color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Tier 2 Calibrated</span>
+            <span style="color: var(--text-muted); font-size: 0.85rem;">Age-calibrated screening path</span>
+        </div>
+        <h3 id="tier-title" style="font-size: 1.25rem; font-weight: 800; color: white; margin: 0 0 0.4rem 0;">TIER 2 (Ages 6–9) — Manifestation Screening</h3>
+        <p id="tier-desc" style="color: var(--text-secondary); margin: 0; font-size: 0.9rem; line-height: 1.5;">
+            Evaluates Dyslexia, Dyscalculia, and Dysgraphia branches with short reading passages, math fact retrieval latency, and touchscreen sentence drawing.
+        </p>
+    </div>
+
+    <!-- PRE-SCREENING INFORMED CONSENT CHECKBOX -->
+    <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+            <span style="font-size: 0.9rem; font-weight: 700; color: #3498db;">📋 Pre-Screening Consent & Medical Disclaimer</span>
+            <button id="btn-read-aloud" type="button" class="btn" style="background: rgba(52,152,219,0.2); border: 1px solid #3498db; color: #3498db; font-size: 0.8rem; padding: 0.3rem 0.7rem; border-radius: 6px;">
+                🔊 Read Aloud for Child
+            </button>
+        </div>
+        <div id="consent-text" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; margin-bottom: 0.75rem;">
+            This SLD screening module provides preliminary assessment scores aligned with DSM-5-TR and ICD-11 criteria. It does not replace a formal clinical evaluation. Participation is voluntary.
+        </div>
+        <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-size: 0.9rem; font-weight: 600; color: white;">
+            <input type="checkbox" id="chk-consent" style="width: 18px; height: 18px; accent-color: #9b59b6;" checked>
+            <span>I confirm informed consent and agree to start the age-calibrated tests.</span>
+        </label>
+    </div>
+
+    <!-- LAUNCH TIER TESTS BUTTON -->
+    <div style="text-align: center;">
+        <button id="btn-launch-tier" class="btn" style="background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; font-weight: 800; padding: 0.9rem 2.2rem; font-size: 1.2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(155,89,182,0.4); width: 100%;">
+            Launch Tier Screening Tests Now ➔
+        </button>
+    </div>
+
+</div>
+
+<!-- AGE-TIER MATRIX REFERENCE -->
+<div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; opacity: 0.85;">
+    <div class="card" style="text-align: left; padding: 1rem; border-color: rgba(46,204,113,0.3);">
+        <span style="color: #2ecc71; font-weight: 800; font-size: 0.75rem; text-transform: uppercase;">Tier 1 • Ages 3–5</span>
+        <h4 style="margin: 0.3rem 0; font-size: 1rem; color: white;">Precursor Screening</h4>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Rhyme game, subitizing flash, motor midline curve.</p>
+    </div>
+    <div class="card" style="text-align: left; padding: 1rem; border-color: rgba(52,152,219,0.3);">
+        <span style="color: #3498db; font-weight: 800; font-size: 0.75rem; text-transform: uppercase;">Tier 2 • Ages 6–9</span>
+        <h4 style="margin: 0.3rem 0; font-size: 1rem; color: white;">Manifestation Screening</h4>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Dyslexia, Dyscalculia, Dysgraphia + comorbidity.</p>
+    </div>
+    <div class="card" style="text-align: left; padding: 1rem; border-color: rgba(241,196,15,0.3);">
+        <span style="color: #f1c40f; font-weight: 800; font-size: 0.75rem; text-transform: uppercase;">Tier 3 • Ages 10–13</span>
+        <h4 style="margin: 0.3rem 0; font-size: 1rem; color: white;">Compensation-Resistant</h4>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Multi-round RAN slowdown, decoding ladder, sight-word decay.</p>
+    </div>
+    <div class="card" style="text-align: left; padding: 1rem; border-color: rgba(231,76,60,0.3);">
+        <span style="color: #e74c3c; font-weight: 800; font-size: 0.75rem; text-transform: uppercase;">Tier 4 • Ages 14+</span>
+        <h4 style="margin: 0.3rem 0; font-size: 1rem; color: white;">Executive & Task Distress</h4>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Academic task distress questionnaire + social masking flag.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const ageInput = document.getElementById('sld-age');
+    const genderSelect = document.getElementById('sld-gender');
+    const nameInput = document.getElementById('sld-name');
+    const langSelect = document.getElementById('sld-lang');
+    const launchBtn = document.getElementById('btn-launch-tier');
+    const consentChk = document.getElementById('chk-consent');
+
+    const banner = document.getElementById('tier-calibration-banner');
+    const badge = document.getElementById('tier-badge');
+    const title = document.getElementById('tier-title');
+    const desc = document.getElementById('tier-desc');
+    const readAloudBtn = document.getElementById('btn-read-aloud');
+    const consentText = document.getElementById('consent-text');
+
+    function getTierForAge(age) {
+        if (age <= 5) return 1;
+        if (age <= 9) return 2;
+        if (age <= 13) return 3;
+        return 4;
+    }
+
+    function updateTierCard() {
+        const age = parseInt(ageInput.value) || 8;
+        const tier = getTierForAge(age);
+
+        if (tier === 1) {
+            banner.style.borderColor = "#2ecc71";
+            banner.style.background = "rgba(46,204,113,0.12)";
+            badge.innerText = "Tier 1 Calibrated (Ages 3–5)";
+            badge.style.background = "#2ecc71";
+            title.innerText = "TIER 1 (Ages 3–5) — Precursor Screening";
+            desc.innerText = "Gamified pre-literate battery: Rhyme sound audio discrimination game, subitizing flash quantity task, and visual midline tracing canvas.";
+        } else if (tier === 2) {
+            banner.style.borderColor = "#3498db";
+            banner.style.background = "rgba(52,152,219,0.12)";
+            badge.innerText = "Tier 2 Calibrated (Ages 6–9)";
+            badge.style.background = "#3498db";
+            title.innerText = "TIER 2 (Ages 6–9) — Manifestation Screening";
+            desc.innerText = "Screens Dyslexia (RAN, Phonological, Spelling, Comp), Dyscalculia (Magnitude, Fact retrieval delay), and Dysgraphia (Dictated touchscreen sentence drawing) with multi-branch comorbidity detection.";
+        } else if (tier === 3) {
+            banner.style.borderColor = "#f1c40f";
+            banner.style.background = "rgba(241,196,15,0.12)";
+            badge.innerText = "Tier 3 Calibrated (Ages 10–13)";
+            badge.style.background = "#f1c40f";
+            badge.style.color = "black";
+            title.innerText = "TIER 3 (Ages 10–13) — Compensation-Resistant Screening";
+            desc.innerText = "Employs multi-round RAN slowdown rate, adaptive decoding ladder, sight-word memory decay tests, and reading-to-learn text to defeat memorization compensation.";
+        } else {
+            banner.style.borderColor = "#e74c3c";
+            banner.style.background = "rgba(231,76,60,0.12)";
+            badge.innerText = "Tier 4 Calibrated (Ages 14+)";
+            badge.style.background = "#e74c3c";
+            badge.style.color = "white";
+            title.innerText = "TIER 4 (Ages 14+) — Executive Function & Task Distress";
+            desc.innerText = "Combines high-complexity cognitive subtests with an Academic Task Distress Questionnaire to flag task anxiety and adolescent social masking / denial.";
+        }
+
+        launchBtn.innerText = `Launch Tier ${tier} Tests Now ➔`;
+    }
+
+    ageInput.addEventListener('input', updateTierCard);
+    updateTierCard();
+
+    // Read Aloud for child / pre-literate user
+    readAloudBtn.addEventListener('click', () => {
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const text = consentText.innerText;
+            const utter = new SpeechSynthesisUtterance(text);
+            utter.rate = 0.9;
+            utter.lang = langSelect.value === 'hi' ? 'hi-IN' : 'en-US';
+            window.speechSynthesis.speak(utter);
+        } else {
+            alert('Speech synthesis is not supported on this browser.');
+        }
+    });
+
+    launchBtn.addEventListener('click', () => {
+        if (!consentChk.checked) {
+            alert('Please check the consent checkbox to proceed.');
+            return;
+        }
+
+        const age = parseInt(ageInput.value) || 8;
+        const tier = getTierForAge(age);
+        const intakeData = {
+            age: age,
+            gender: genderSelect.value,
+            name: nameInput.value || 'Anonymous',
+            lang: langSelect.value,
+            tier: tier,
+            timestamp: new Date().toISOString()
+        };
+
+        localStorage.setItem('sld_intake', JSON.stringify(intakeData));
+        window.location.href = `/test/sld/tier${tier}`;
+    });
+});
+</script>
+{% endblock %}

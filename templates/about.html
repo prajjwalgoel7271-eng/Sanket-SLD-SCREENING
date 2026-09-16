@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}About & Methodology — Sanket SLD{% endblock %}
+
+{% block content %}
+<div class="header" style="margin-bottom: 1.5rem; text-align: center;">
+    <h1 class="page-title" style="color: var(--accent-purple);">📖 About Sanket & Clinical Methodology</h1>
+    <p class="page-subtitle" style="color: var(--text-secondary);">Evidence-based digital assessment framework for Specific Learning Disorders.</p>
+</div>
+
+<div class="card">
+    <h2 style="color: var(--accent-purple); margin-bottom: 0.8rem; font-size: 1.3rem;">Project Mission</h2>
+    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+        <strong>Sanket</strong> was designed as a dedicated, non-invasive digital screening system to identify Specific Learning Disorders (SLD) — including Dyslexia, Dyscalculia, and Dysgraphia — across all developmental stages. By combining objective task performance, latency tracking, keystroke dynamics, and executive distress questionnaires, Sanket delivers precise risk stratification.
+    </p>
+
+    <h2 style="color: var(--accent-blue); margin-bottom: 0.8rem; font-size: 1.3rem;">Diagnostic Standards & Criteria</h2>
+    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+        Sanket's screening algorithms are constructed in strict alignment with international clinical diagnostic manuals:
+    </p>
+    <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li><strong>DSM-5-TR (Diagnostic and Statistical Manual of Mental Disorders)</strong>: Criteria A1 through A6 for 315.00 (Reading), 315.1 (Mathematics), and 315.2 (Written Expression).</li>
+        <li><strong>ICD-11 (International Classification of Diseases)</strong>: Codes 6A03.0 (Impairment in Reading), 6A03.1 (Impairment in Mathematics), and 6A03.2 (Impairment in Written Expression).</li>
+    </ul>
+
+    <h2 style="color: var(--accent-gold); margin-bottom: 0.8rem; font-size: 1.3rem;">Key Innovations</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+        <div style="background: rgba(255,255,255,0.04); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: var(--text-primary); margin-bottom: 0.4rem;">🎧 Audio Dictated Spelling</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Real & pseudo-word dictation testing phonological decoding.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: var(--text-primary); margin-bottom: 0.4rem;">⌨️ Keystroke Pacing Dynamics</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Measures pause ratios and character speed decay from the first letter typed.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: var(--text-primary); margin-bottom: 0.4rem;">🛡️ Social Masking Detection</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Flags adolescent coping denial when objective risk contrasts low self-reported distress.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

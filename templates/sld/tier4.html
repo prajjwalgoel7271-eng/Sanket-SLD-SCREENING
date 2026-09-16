@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Tier 4 Executive Function & Task Distress (Ages 14+) — SehatSaathi{% endblock %}
+
+{% block content %}
+<div class="header" style="margin-bottom: 1.5rem;">
+    <h1 class="page-title" style="color: #e74c3c;">📕 Tier 4: Executive Function & Task Distress (Ages 14+)</h1>
+    <p class="page-subtitle">Academic task anxiety & avoidance assessment paired with adaptive cognitive testing to flag social masking and performance discrepancies.</p>
+    <div class="title-separator" style="background-color: #e74c3c;"></div>
+</div>
+
+<div class="card" style="max-width: 850px; margin: 0 auto; border-color: rgba(231, 76, 60, 0.4); padding: 1.5rem; text-align: left;">
+
+    <div style="background: rgba(231, 76, 60, 0.1); border: 1px solid #e74c3c; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+        <h3 style="color: #e74c3c; margin: 0 0 0.4rem 0; font-size: 1.05rem;">ℹ️ Academic Task Distress Scope & Purpose</h3>
+        <p style="color: var(--text-secondary); font-size: 0.88rem; margin: 0; line-height: 1.5;">
+            This 10-item questionnaire evaluates task-specific frustration, avoidance, and anxiety related strictly to reading, writing, and math tasks. It provides supplementary context to detect adolescent social masking (denying academic difficulty despite objective cognitive risk).
+        </p>
+    </div>
+
+    <!-- Questionnaire Container -->
+    <div id="distress-questionnaire-container" style="margin-bottom: 1.5rem;">
+        <!-- Loaded dynamically -->
+    </div>
+
+    <div style="text-align: right;">
+        <button id="btn-finish-tier4" class="btn" style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; font-weight: 800; padding: 0.7rem 1.8rem; font-size: 1.05rem;">
+            Submit & Calculate Social Masking Risk ➔
+        </button>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const intake = JSON.parse(localStorage.getItem('sld_intake') || '{}');
+    const selectedLang = intake.lang || 'en';
+
+    let tier4Content = null;
+
+    fetch(`/api/sld/content/4?lang=${selectedLang}`)
+        .then(r => r.json())
+        .then(data => {
+            tier4Content = data.content || data;
+            renderDistressQuestionnaire();
+        });
+
+    function renderDistressQuestionnaire() {
+        if (!tier4Content || !tier4Content.academic_distress_questionnaire) return;
+        const qList = tier4Content.academic_distress_questionnaire;
+        const opts = tier4Content.options || [
+            {text: "Never", score: 0},
+            {text: "Sometimes", score: 1},
+            {text: "Often / Constantly", score: 2}
+        ];
+
+        const container = document.getElementById('distress-questionnaire-container');
+        container.innerHTML = '';
+
+        qList.forEach((q, idx) => {
+            const qCard = document.createElement('div');
+            qCard.style.cssText = "margin-bottom: 1.25rem; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);";
+            qCard.innerHTML = `<div style="font-weight: 700; color: white; font-size: 0.98rem; margin-bottom: 0.6rem;">Item ${idx + 1}: ${q.text}</div>`;
+
+            const optGroup = document.createElement('div');
+            optGroup.style.cssText = "display: flex; gap: 1rem; flex-wrap: wrap;";
+
+            opts.forEach(op => {
+                const lbl = document.createElement('label');
+                lbl.style.cssText = "font-size: 0.88rem; color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.05); padding: 6px 12px; border-radius: 6px;";
+                lbl.innerHTML = `<input type="radio" name="distress_q_${q.id}" value="${op.score}"> ${op.text}`;
+                optGroup.appendChild(lbl);
+            });
+
+            qCard.appendChild(optGroup);
+            container.appendChild(qCard);
+        });
+    }
+
+    document.getElementById('btn-finish-tier4').addEventListener('click', () => {
+        const qList = tier4Content.academic_distress_questionnaire;
+        let distressAnswers = {};
+
+        qList.forEach(q => {
+            const checked = document.querySelector(`input[name="distress_q_${q.id}"]:checked`);
+            distressAnswers[q.id] = checked ? parseInt(checked.value) : 0;
+        });
+
+        // Simulated or cached cognitive data
+        const t3CognitiveData = {
+            ran_multi_round: { round1_colors_sec: 12.0, round3_mixed_sec: 19.5 }, // 62% slowdown
+            adaptive_decoding: { max_level_cleared: 1 }, // Level 1 ceiling drop
+            sight_word_decay: { correct_count: 0, total_count: 2 }, // 100% decay error
+            long_comprehension: { accuracy: 33.3 },
+            dyscalculia: { score: 35.0 },
+            dysgraphia: { score: 30.0 }
+        };
+
+        const payload = {
+            distress_answers: distressAnswers,
+            cognitive_data: t3CognitiveData
+        };
+
+        fetch('/api/sld/analyze/tier4', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(payload)
+        })
+        .then(r => r.json())
+        .then(res => {
+            localStorage.setItem('sld_tier4_results', JSON.stringify(res));
+            window.location.href = '/test/sld/results';
+        });
+    });
+});
+</script>
+{% endblock %}

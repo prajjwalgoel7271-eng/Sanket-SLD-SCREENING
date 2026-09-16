@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Sanket — Early Signals. Brighter Futures.{% endblock %}
+
+{% block content %}
+<!-- HERO SECTION -->
+<div class="hero-box">
+    <div class="hero-tag" data-translatable>SLD SCREENING ENGINE</div>
+    
+    <h1 class="hero-title">
+        <span data-translatable>Early Signals.</span><br>
+        <span style="color: var(--accent);" data-translatable>Brighter Futures.</span>
+    </h1>
+
+    <p class="hero-subtitle" data-translatable>
+        Precision digital screening for Dyslexia, Dyscalculia, and Dysgraphia across 4 age tiers — localized in 13 regional languages.
+    </p>
+
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/test/sld" class="btn btn-primary">
+            <span data-translatable>Start Screening</span> ➔
+        </a>
+        <a href="/about" class="btn btn-secondary" data-translatable>
+            Learn More
+        </a>
+    </div>
+</div>
+
+<!-- 3 DOMAINS GRID -->
+<div class="grid-3">
+    <div class="domain-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📖</div>
+        <div class="domain-title" data-translatable>Dyslexia</div>
+        <div class="domain-desc" data-translatable>Reading decoding, dictated spelling, and multi-round RAN speed assessment.</div>
+    </div>
+
+    <div class="domain-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔢</div>
+        <div class="domain-title" data-translatable>Dyscalculia</div>
+        <div class="domain-desc" data-translatable>Subitizing latency, magnitude speed, and arithmetic fact calculation delays.</div>
+    </div>
+
+    <div class="domain-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">✍️</div>
+        <div class="domain-title" data-translatable>Dysgraphia</div>
+        <div class="domain-desc" data-translatable>Keystroke pacing dynamics and pause ratios starting from the first letter typed.</div>
+    </div>
+</div>
+
+<!-- TIER BADGES BAR -->
+<div class="card" style="margin-top: 2rem; text-align: center; padding: 1.5rem;">
+    <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;" data-translatable>
+        Age-Gated Screening Portals
+    </div>
+    <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <span style="background: var(--accent-subtle); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.88rem;" data-translatable>Tier 1 (Ages 3–5)</span>
+        <span style="background: var(--accent-subtle); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.88rem;" data-translatable>Tier 2 (Ages 6–9)</span>
+        <span style="background: var(--accent-subtle); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.88rem;" data-translatable>Tier 3 (Ages 10–13)</span>
+        <span style="background: var(--accent-subtle); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.88rem;" data-translatable>Tier 4 (Ages 14+)</span>
+    </div>
+</div>
+{% endblock %}
