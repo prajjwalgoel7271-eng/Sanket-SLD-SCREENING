@@ -6,8 +6,9 @@ import urllib.parse
 import traceback
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 
-# Ensure detection package is in sys.path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
 
 from detection.sld import (
     load_sld_content_bank,
@@ -17,7 +18,11 @@ from detection.sld import (
     analyze_tier4_data
 )
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder=os.path.join(BASE_DIR, 'templates'),
+    static_folder=os.path.join(BASE_DIR, 'static')
+)
 app.secret_key = os.environ.get("SECRET_KEY", "sanket-sld-secret-key-2026")
 
 
