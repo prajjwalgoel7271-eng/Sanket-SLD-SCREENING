@@ -1,0 +1,34 @@
+{
+  "language": "Bhojpuri",
+  "code": "bho",
+  "words": [
+    {
+      "target": "बिलाई",
+      "type": "real"
+    },
+    {
+      "target": "जहाज",
+      "type": "real"
+    },
+    {
+      "target": "बेंग",
+      "type": "real"
+    },
+    {
+      "target": "कूदल",
+      "type": "real"
+    },
+    {
+      "target": "रात",
+      "type": "real"
+    },
+    {
+      "target": "ड्रिम्प",
+      "type": "pseudo"
+    },
+    {
+      "target": "स्प्लिंग",
+      "type": "pseudo"
+    }
+  ]
+}
