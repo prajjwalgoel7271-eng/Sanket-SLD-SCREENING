@@ -1,0 +1,102 @@
+{
+  "language": "Urdu",
+  "code": "ur",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "لفظ 'کام' کے ساتھ کون سا لفظ ہم قافیہ ہے؟",
+      "options": [
+        "نام",
+        "دن",
+        "گھر"
+      ],
+      "correct": "نام",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "لفظ 'رات' کے ساتھ کون سا لفظ ہم قافیہ ہے؟",
+      "options": [
+        "بات",
+        "پانی",
+        "کتاب"
+      ],
+      "correct": "بات",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "لفظ 'سورج' کی پہلی آواز کیا ہے؟",
+      "options": [
+        "/س/",
+        "/م/",
+        "/ب/"
+      ],
+      "correct": "/س/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "لفظ 'دن' کی آخری آواز کیا ہے؟",
+      "options": [
+        "/ن/",
+        "/ب/",
+        "/ر/"
+      ],
+      "correct": "/ن/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "ان آوازوں کو ملا کر پڑھیں: /ک/ - /ا/ - /م/",
+      "options": [
+        "کام",
+        "کل",
+        "نمک"
+      ],
+      "correct": "کام",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "لفظ 'کتاب' میں کتنی الگ آوازیں ہیں؟",
+      "options": [
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "4",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "کون سا لفظ ایک الگ پہلی آواز سے شروع ہوتا ہے؟",
+      "options": [
+        "سیب",
+        "سانپ",
+        "کتا"
+      ],
+      "correct": "کتا",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "کون سا لفظ ایک الگ آواز پر ختم ہوتا ہے؟",
+      "options": [
+        "بس",
+        "رس",
+        "کام"
+      ],
+      "correct": "کام",
+      "difficulty": "hard"
+    }
+  ]
+}

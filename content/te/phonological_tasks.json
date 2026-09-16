@@ -1,0 +1,102 @@
+{
+  "language": "Telugu",
+  "code": "te",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'కల' పదంతో ఏ పదం ప్రాసను కలిగి ఉంటుంది?",
+      "options": [
+        "వల",
+        "పగలు",
+        "ఇల్లు"
+      ],
+      "correct": "వల",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'మాట' పదంతో ఏ పదం ప్రాసను కలిగి ఉంటుంది?",
+      "options": [
+        "ఆట",
+        "నీరు",
+        "పుస్తకం"
+      ],
+      "correct": "ఆట",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'సూర్యుడు' పదంలో మొదటి శబ్దం ఏమిటి?",
+      "options": [
+        "/సూ/",
+        "/మ/",
+        "/బ/"
+      ],
+      "correct": "/సూ/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'రాత్రి' పదంలో చివరి శబ్దం ఏమిటి?",
+      "options": [
+        "/త్రి/",
+        "/బ/",
+        "/ర/"
+      ],
+      "correct": "/త్రి/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "ఈ శబ్దాలను కలపండి: /క/ - /మ/ - /ల/",
+      "options": [
+        "కమల",
+        "కల",
+        "మలక"
+      ],
+      "correct": "కమల",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'పలక' పదంలో ఎన్ని శబ్దాలు ఉన్నాయి?",
+      "options": [
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "3",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "భిన్నమైన మొదటి శబ్దంతో మొదలయ్యే పదం ఏది?",
+      "options": [
+        "పిల్లి",
+        "పాలు",
+        "కుక్క"
+      ],
+      "correct": "కుక్క",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "భిన్నమైన శబ్దంతో ముగిసే పదం ఏది?",
+      "options": [
+        "బస్సు",
+        "తుస్సు",
+        "పని"
+      ],
+      "correct": "పని",
+      "difficulty": "hard"
+    }
+  ]
+}

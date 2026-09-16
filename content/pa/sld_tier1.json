@@ -1,0 +1,158 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "ਕਿਹੜਾ ਸ਼ਬਦ 'ਬਿੱਲੀ' ਨਾਲ ਤੁਕ ਮਿਲਾਉਂਦਾ ਹੈ?",
+      "target_word": "ਦਿੱਲੀ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ਦਿੱਲੀ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ਕੁੱਤਾ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ਸੂਰਜ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "ਕਿਹੜਾ ਸ਼ਬਦ 'ਤਾਰਾ' ਨਾਲ ਤੁਕ ਮਿਲਾਉਂਦਾ ਹੈ?",
+      "target_word": "ਕਾਰਾ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ਕਾਰਾ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ਪਾਣੀ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ਮੱਛੀ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "ਕਿਹੜਾ ਸ਼ਬਦ 'ਰਾਤ' ਨਾਲ ਤੁਕ ਮਿਲਾਉਂਦਾ ਹੈ?",
+      "target_word": "ਬਾਤ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ਬਾਤ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ਗੇਂਦ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ਰੁੱਖ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "ਕਿਹੜਾ ਸ਼ਬਦ /ਸ/ ਦੀ ਆਵਾਜ਼ ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ?",
+      "target_word": "ਸੂਰਜ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ਸੂਰਜ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ਚੰਦ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ਰੁੱਖ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "ਖੱਬੇ ਤਾਰੇ ਤੋਂ ਸੱਜੇ ਤਾਰੇ ਤੱਕ ਵਿਚਕਾਰਲੀ ਰੇਖਾ ਉੱਤੇ ਉਂਗਲ ਚਲਾਓ!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

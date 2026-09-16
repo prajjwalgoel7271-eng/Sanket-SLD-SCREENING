@@ -1,0 +1,54 @@
+{
+  "language": "Kannada",
+  "code": "kn",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "ವಗ್",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "ಬಿಫ್",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "ಜಾಟ್",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "ಪ್ಲಿಂಕ್",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "ಸ್ಟ್ರಾಪ್",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "ಬ್ಲಾಂಟ್",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "ಫ್ಲಿಂಬರ್",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "ಸ್ಪ್ರಾಟಲ್",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

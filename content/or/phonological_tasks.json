@@ -1,0 +1,102 @@
+{
+  "language": "Odia",
+  "code": "or",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'କାମ' ଶବ୍ଦ ସହିତ କେଉଁ ଶବ୍ଦର ଛନ୍ଦ ମିଳେ?",
+      "options": [
+        "ନାମ",
+        "ଦିନ",
+        "ଘର"
+      ],
+      "correct": "ନାମ",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'ତାରା' ଶବ୍ଦ ସହିତ କେଉଁ ଶବ୍ଦର ଛନ୍ଦ ମିଳେ?",
+      "options": [
+        "ପାରା",
+        "ପାଣି",
+        "ବହି"
+      ],
+      "correct": "ପାରା",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'ସୂର୍ଯ୍ୟ' ଶବ୍ଦର ପ୍ରଥମ ଧ୍ୱନି କ'ଣ?",
+      "options": [
+        "/ସୂ/",
+        "/ମ/",
+        "/ବ/"
+      ],
+      "correct": "/ସୂ/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'ରାତି' ଶବ୍ଦର ଶେଷ ଧ୍ୱନି କ'ଣ?",
+      "options": [
+        "/ତି/",
+        "/ବ/",
+        "/ର/"
+      ],
+      "correct": "/ତି/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "ଏହି ଧ୍ୱନିଗୁଡ଼ିକୁ ଏକାଠି କରନ୍ତୁ: /କ/ - /ମ/ - /ଳ/",
+      "options": [
+        "କମଳ",
+        "କାଳ",
+        "ମଲମ"
+      ],
+      "correct": "କମଳ",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'ବତକ' ଶବ୍ଦରେ କେତୋଟି ଧ୍ୱନି ଅଛି?",
+      "options": [
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "3",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "କେଉଁ ଶବ୍ଦ ଭିନ୍ନ ପ୍ରଥମ ଧ୍ୱନିରୁ ଆରମ୍ଭ ହୁଏ?",
+      "options": [
+        "ସେଓ",
+        "ସାପ",
+        "କୁକୁର"
+      ],
+      "correct": "କୁକୁର",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "କେଉଁ ଶବ୍ଦ ଭିନ୍ନ ଧ୍ୱନିରେ ଶେଷ ହୁଏ?",
+      "options": [
+        "ବସ୍",
+        "ରସ",
+        "କାମ"
+      ],
+      "correct": "କାମ",
+      "difficulty": "hard"
+    }
+  ]
+}

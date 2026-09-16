@@ -1,0 +1,54 @@
+{
+  "language": "Odia",
+  "code": "or",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "ୱଗ୍",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "ବିଫ୍",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "ଜଟ୍",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "ପ୍ଲିଙ୍କ୍",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "ଷ୍ଟ୍ରପ୍",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "ବ୍ଲାଣ୍ଟ୍",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "ଫ୍ଲିମ୍ବର୍",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "ସ୍ପ୍ରୋଟଲ୍",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

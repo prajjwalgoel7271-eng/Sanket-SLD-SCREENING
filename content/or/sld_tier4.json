@@ -1,0 +1,71 @@
+{
+  "language": "Odia",
+  "code": "or",
+  "tier": 4,
+  "academic_distress_questionnaire": [
+    {
+      "id": "q1",
+      "text": "ଅନ୍ୟମାନଙ୍କ ଆଗରେ ପାଟି କରି ପଢ଼ିବାକୁ କୁହାଗଲେ ମୋତେ ଭୟ ଲାଗେ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q2",
+      "text": "ସାଙ୍ଗମାନଙ୍କ ତୁଳନାରେ ଲେଖିବା କାମ ଶେଷ କରିବାକୁ ମୋତେ ଅଧିକ ସମୟ ଲାଗେ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q3",
+      "text": "କଠିନ ଗଣିତ ପ୍ରଶ୍ନ ଦେଖିଲେ ମୋତେ ଚିନ୍ତା ଲାଗେ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q4",
+      "text": "ଉତ୍ତର ଜାଣିଥିଲେ ବି ମୋର ଲେଖା ଶୈଳୀ କିମ୍ବା ଲେଖିବା ବେଗ ମୋତେ ପଛରେ ରଖେ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q5",
+      "text": "ଖୁବ୍ ଦରକାର ନହେଲେ ମୁଁ ଲମ୍ବା ପାରାଗ୍ରାଫ୍ ପଢ଼ିବାକୁ ଏଡ଼ାଇ ଯାଏ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q6",
+      "text": "ବୁଝିବା ପରେ ବି ମୁଁ ଗଣନାରେ ଭୁଲ୍ କରେ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q7",
+      "text": "ପରୀକ୍ଷା ସମୟରେ ମୋତେ ଶାରୀରିକ ଥକାପଣ ଅନୁଭବ ହୁଏ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q8",
+      "text": "ରଚନା ଲେଖିବା ବେଳେ ମୋର ଚିନ୍ତାଧାରାକୁ କାଗଜରେ ଲେଖିବାରେ କଷ୍ଟ ହୁଏ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q9",
+      "text": "ମୋର ପଢ଼ିବା ବେଗ ମୋର ପ୍ରକୃତ ବୁଦ୍ଧିମତ୍ତା ଦର୍ଶାଉ ନାହିଁ ବୋଲି ମୁଁ ଚିନ୍ତିତ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q10",
+      "text": "ସାହାଯ୍ୟ ମାଗିବାରୁ ବଞ୍ଚିବା ପାଇଁ ମୁଁ ବୁଝିଗଲା ପରି ନାଟକ କରେ।",
+      "domain": "academic_distress"
+    }
+  ],
+  "options": [
+    {
+      "text": "କେବେ ନୁହେଁ",
+      "score": 0
+    },
+    {
+      "text": "କେବେ କେବେ",
+      "score": 1
+    },
+    {
+      "text": "ସବୁବେଳେ / କ୍ରମାଗତ",
+      "score": 2
+    }
+  ]
+}

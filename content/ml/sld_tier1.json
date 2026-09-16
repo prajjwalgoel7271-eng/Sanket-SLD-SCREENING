@@ -1,0 +1,158 @@
+{
+  "language": "Malayalam",
+  "code": "ml",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "ഏത് വാക്കാണ് 'പൂച്ച' യുമായി പ്രാസമുള്ളത്?",
+      "target_word": "കാച്ച",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "കാച്ച",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "പട്ടി",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "സൂര്യൻ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "ഏത് വാക്കാണ് 'താരം' യുമായി പ്രാസമുള്ളത്?",
+      "target_word": "ഭാരം",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ഭാരം",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "വെള്ളം",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "മീൻ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "ഏത് വാക്കാണ് 'രാത്രി' യുമായി പ്രാസമുള്ളത്?",
+      "target_word": "പാത്രം",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "പാത്രം",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "പന്ത്",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "മരം",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "ഏത് വാക്കാണ് /സ/ ശബ്ദത്തിൽ തുടങ്ങുന്നത്?",
+      "target_word": "സൂര്യൻ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "സൂര്യൻ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ചന്ദ്രൻ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "മരം",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "ഇടത് നക്ഷത്രത്തിൽ നിന്ന് വലത് നക്ഷത്രത്തിലേക്ക് നടുവിലത്തെ വരയിലൂടെ വിരൽ ഓടിക്കുക!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

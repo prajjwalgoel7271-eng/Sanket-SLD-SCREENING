@@ -1,0 +1,108 @@
+{
+  "language": "Tamil",
+  "code": "ta",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Tamil)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "அ",
+        "க",
+        "ம",
+        "ச",
+        "ப",
+        "ர",
+        "த",
+        "ந",
+        "ல",
+        "வ"
+      ],
+      "target_words": [
+        "அ",
+        "க",
+        "ம",
+        "ச",
+        "ப",
+        "ர",
+        "த",
+        "ந",
+        "ல",
+        "வ"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Tamil)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "2",
+        "6",
+        "4",
+        "9",
+        "7",
+        "3",
+        "5",
+        "8",
+        "1"
+      ],
+      "target_words": [
+        "இரண்டு",
+        "ஆறு",
+        "நான்கு",
+        "ஒன்பது",
+        "ஏழு",
+        "மூன்று",
+        "ஐந்து",
+        "எட்டு",
+        "ஒன்று"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Tamil)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "சிவப்பு",
+        "நீலம்",
+        "பச்சை",
+        "மஞ்சள்",
+        "ஊதா",
+        "ஆரஞ்சு"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Tamil)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "நட்சத்திரம்",
+        "ஆப்பிள்",
+        "பூனை",
+        "கார்",
+        "சாவி",
+        "பந்து"
+      ]
+    }
+  ]
+}

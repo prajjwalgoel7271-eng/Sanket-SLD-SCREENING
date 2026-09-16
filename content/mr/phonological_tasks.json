@@ -1,0 +1,102 @@
+{
+  "language": "Marathi",
+  "code": "mr",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'काम' या शब्दाशी यमक जुळणारा शब्द कोणता?",
+      "options": [
+        "नाम",
+        "दिवस",
+        "घर"
+      ],
+      "correct": "नाम",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'वारा' या शब्दाशी यमक जुळणारा शब्द कोणता?",
+      "options": [
+        "तारा",
+        "पाणी",
+        "पुस्तक"
+      ],
+      "correct": "तारा",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'सूर्य' या शब्दातील पहिला ध्वनी कोणता?",
+      "options": [
+        "/सू/",
+        "/म/",
+        "/ब/"
+      ],
+      "correct": "/सू/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'रात्र' या शब्दातील शेवटचा ध्वनी कोणता?",
+      "options": [
+        "/त्र/",
+        "/ब/",
+        "/र/"
+      ],
+      "correct": "/त्र/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "हे ध्वनी एकत्र करा: /क/ - /म/ - /ळ/",
+      "options": [
+        "कमळ",
+        "काळ",
+        "मलम"
+      ],
+      "correct": "कमळ",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'बदक' या शब्दात किती वेगळे ध्वनी आहेत?",
+      "options": [
+        "३",
+        "४",
+        "२"
+      ],
+      "correct": "३",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "कोणता शब्द वेगळ्या पहिल्या ध्वनीने सुरू होतो?",
+      "options": [
+        "ससा",
+        "सफरचंद",
+        "कुत्रा"
+      ],
+      "correct": "कुत्रा",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "कोणता शब्द वेगळ्या ध्वनीने संपतो?",
+      "options": [
+        "बस",
+        "रस",
+        "काम"
+      ],
+      "correct": "काम",
+      "difficulty": "hard"
+    }
+  ]
+}

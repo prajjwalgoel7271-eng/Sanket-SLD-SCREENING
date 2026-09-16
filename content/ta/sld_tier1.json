@@ -1,0 +1,158 @@
+{
+  "language": "Tamil",
+  "code": "ta",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "எந்த சொல் 'பூனை' உடன் எதுகையாக அமைகிறது?",
+      "target_word": "பானை",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "பானை",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "நாய்",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "சூரியன்",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "எந்த சொல் 'காரணம்' உடன் எதுகையாக அமைகிறது?",
+      "target_word": "வாரணம்",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "வாரணம்",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "நீர்",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "மீன்",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "எந்த சொல் 'இரவு' உடன் எதுகையாக அமைகிறது?",
+      "target_word": "வரவு",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "வரவு",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "பந்து",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "மரம்",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "எந்த சொல் /சு/ ஒலியில் தொடங்குகிறது?",
+      "target_word": "சூரியன்",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "சூரியன்",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "நிலா",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "மரம்",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "இடது நட்சத்திரத்திலிருந்து வலது நட்சத்திரத்திற்கு நடுக் கோட்டின் மேல் விரலை நகர்த்தவும்!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "language": "Marathi",
+  "code": "mr",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Marathi)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "अ",
+        "क",
+        "म",
+        "च",
+        "प",
+        "र",
+        "स",
+        "त",
+        "न",
+        "ल"
+      ],
+      "target_words": [
+        "अ",
+        "क",
+        "म",
+        "च",
+        "प",
+        "र",
+        "स",
+        "त",
+        "न",
+        "ल"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Marathi)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "२",
+        "६",
+        "४",
+        "९",
+        "७",
+        "३",
+        "५",
+        "८",
+        "१"
+      ],
+      "target_words": [
+        "दोन",
+        "सहा",
+        "चार",
+        "नऊ",
+        "सात",
+        "तीन",
+        "पाच",
+        "आठ",
+        "एक"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Marathi)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "लाल",
+        "निळा",
+        "हिरवा",
+        "पिवळा",
+        "जांभळा",
+        "नारिंगी"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Marathi)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "तारा",
+        "सफरचंद",
+        "मांजर",
+        "गाडी",
+        "किल्ली",
+        "चेंडू"
+      ]
+    }
+  ]
+}

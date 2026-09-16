@@ -1,0 +1,102 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'ਕੰਮ' ਸ਼ਬਦ ਦੇ ਨਾਲ ਕਿਹੜਾ ਸ਼ਬਦ ਤੁਕਬੰਦੀ ਕਰਦਾ ਹੈ?",
+      "options": [
+        "ਚੰਮ",
+        "ਦਿਨ",
+        "ਘਰ"
+      ],
+      "correct": "ਚੰਮ",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'ਤਾਰਾ' ਸ਼ਬਦ ਦੇ ਨਾਲ ਕਿਹੜਾ ਸ਼ਬਦ ਤੁਕਬੰਦੀ ਕਰਦਾ ਹੈ?",
+      "options": [
+        "ਸਾਰਾ",
+        "ਪਾਣੀ",
+        "ਕਿਤਾਬ"
+      ],
+      "correct": "ਸਾਰਾ",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'ਸੂਰਜ' ਸ਼ਬਦ ਦੀ ਪਹਿਲੀ ਆਵਾਜ਼ ਕੀ ਹੈ?",
+      "options": [
+        "/ਸ/",
+        "/ਮ/",
+        "/ਬ/"
+      ],
+      "correct": "/ਸ/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'ਰਾਤ' ਸ਼ਬਦ ਦੀ ਆਖਰੀ ਆਵਾਜ਼ ਕੀ ਹੈ?",
+      "options": [
+        "/ਤ/",
+        "/ਬ/",
+        "/ਰ/"
+      ],
+      "correct": "/ਤ/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "ਇਹਨਾਂ ਆਵਾਜ਼ਾਂ ਨੂੰ ਮਿਲਾਓ: /ਕ/ - /ਮ/ - /ਲ/",
+      "options": [
+        "ਕਮਲ",
+        "ਕੱਲ",
+        "ਨਮਕ"
+      ],
+      "correct": "ਕਮਲ",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'ਬਤਖ' ਸ਼ਬਦ ਵਿੱਚ ਕਿੰਨੀਆਂ ਆਵਾਜ਼ਾਂ ਹਨ?",
+      "options": [
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "3",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "ਕਿਹੜਾ ਸ਼ਬਦ ਵੱਖਰੀ ਪਹਿਲੀ ਆਵਾਜ਼ ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ?",
+      "options": [
+        "ਸੇਬ",
+        "ਸੱਪ",
+        "ਕੁੱਤਾ"
+      ],
+      "correct": "ਕੁੱਤਾ",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "ਕਿਹੜਾ ਸ਼ਬਦ ਵੱਖਰੀ ਆਵਾਜ਼ ਨਾਲ ਖਤਮ ਹੁੰਦਾ ਹੈ?",
+      "options": [
+        "ਬੱਸ",
+        "ਰੱਸ",
+        "ਕੰਮ"
+      ],
+      "correct": "ਕੰਮ",
+      "difficulty": "hard"
+    }
+  ]
+}

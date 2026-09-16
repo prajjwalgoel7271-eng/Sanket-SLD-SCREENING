@@ -1,0 +1,187 @@
+{
+  "language": "Hindi",
+  "code": "hi",
+  "tier": 2,
+  "dyslexia": {
+    "comprehension_passage": {
+      "title": "छोटा बहादुर पिल्ला",
+      "text": "लियो एक छोटा भूरा पिल्ला है जो एक शांत गाँव में रहता है। एक दोपहर, लियो को पुराने खलिहान के पीछे एक खोया हुआ बिल्ली का बच्चा मिला। उसने बिल्ली के बच्चे को उसकी माँ के पास पहुँचाने के लिए धीरे से भौंका।",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "लियो किस प्रकार का जानवर है?",
+          "options": [
+            "एक छोटा भूरा पिल्ला",
+            "एक छोटी बिल्ली",
+            "एक बड़ा घोड़ा"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "q2",
+          "question": "लियो को बिल्ली का बच्चा कहाँ मिला?",
+          "options": [
+            "एक पार्क में",
+            "पुराने खलिहान के पीछे",
+            "घर के अंदर"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "q3",
+          "question": "लियो ने बिल्ली के बच्चे की मदद कैसे की?",
+          "options": [
+            "भागकर",
+            "धीरे से भौंककर",
+            "पेड़ पर चढ़कर"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    "spelling": [
+      {
+        "target": "पौधा",
+        "type": "real"
+      },
+      {
+        "target": "घड़ी",
+        "type": "real"
+      },
+      {
+        "target": "सूरज",
+        "type": "real"
+      },
+      {
+        "target": "स्ट्रॉप",
+        "type": "pseudo"
+      },
+      {
+        "target": "फ्लिम",
+        "type": "pseudo"
+      }
+    ]
+  },
+  "dyscalculia": {
+    "magnitude_comparison": [
+      {
+        "id": "m1",
+        "num1": 8,
+        "num2": 3,
+        "correct_larger": 8
+      },
+      {
+        "id": "m2",
+        "num1": 14,
+        "num2": 19,
+        "correct_larger": 19
+      },
+      {
+        "id": "m3",
+        "num1": 25,
+        "num2": 17,
+        "correct_larger": 25
+      },
+      {
+        "id": "m4",
+        "num1": 6,
+        "num2": 11,
+        "correct_larger": 11
+      },
+      {
+        "id": "m5",
+        "num1": 32,
+        "num2": 28,
+        "correct_larger": 32
+      }
+    ],
+    "fact_retrieval": [
+      {
+        "id": "f1",
+        "expr": "2 + 3",
+        "answer": 5,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f2",
+        "expr": "5 + 5",
+        "answer": 10,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f3",
+        "expr": "9 - 4",
+        "answer": 5,
+        "instant_threshold_sec": 2.0
+      },
+      {
+        "id": "f4",
+        "expr": "4 + 4",
+        "answer": 8,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f5",
+        "expr": "10 - 3",
+        "answer": 7,
+        "instant_threshold_sec": 2.2
+      }
+    ],
+    "number_sequence": [
+      {
+        "id": "seq1",
+        "prompt": "2, 4, 6, _",
+        "options": [
+          7,
+          8,
+          9
+        ],
+        "correct": 8
+      },
+      {
+        "id": "seq2",
+        "prompt": "5, 10, 15, _",
+        "options": [
+          20,
+          25,
+          30
+        ],
+        "correct": 20
+      },
+      {
+        "id": "seq3",
+        "prompt": "10, 9, 8, _",
+        "options": [
+          6,
+          7,
+          5
+        ],
+        "correct": 7
+      },
+      {
+        "id": "seq4",
+        "prompt": "3, 6, 9, _",
+        "options": [
+          10,
+          11,
+          12
+        ],
+        "correct": 12
+      }
+    ]
+  },
+  "dysgraphia": {
+    "dictated_sentences": [
+      {
+        "id": "ds1",
+        "level": "simple",
+        "text": "सूरज बहुत गर्म है।"
+      },
+      {
+        "id": "ds2",
+        "level": "complex",
+        "text": "तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर से कूदती है।"
+      }
+    ]
+  }
+}

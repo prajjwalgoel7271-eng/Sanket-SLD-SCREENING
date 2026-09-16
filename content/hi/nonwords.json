@@ -1,0 +1,54 @@
+{
+  "language": "Hindi",
+  "code": "hi",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "वूग",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "बिफ",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "ज़ोट",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "प्लिंक",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "स्ट्रॉप",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "ब्लैंट",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "फ्लिम्बर",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "स्प्रोटल",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "language": "Odia",
+  "code": "or",
+  "words": [
+    {
+      "target": "ବିରାଡ଼ି",
+      "type": "real"
+    },
+    {
+      "target": "ଜାହାଜ",
+      "type": "real"
+    },
+    {
+      "target": "ବେଙ୍ଗ",
+      "type": "real"
+    },
+    {
+      "target": "ଡେଇଁବା",
+      "type": "real"
+    },
+    {
+      "target": "ରାତି",
+      "type": "real"
+    },
+    {
+      "target": "ଡ୍ରିମ୍ପ୍",
+      "type": "pseudo"
+    },
+    {
+      "target": "ସ୍ପ୍ଲିଙ୍ଗ୍",
+      "type": "pseudo"
+    }
+  ]
+}

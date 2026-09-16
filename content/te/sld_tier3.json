@@ -1,0 +1,135 @@
+{
+  "language": "Telugu",
+  "code": "te",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "ఎరుపు",
+      "నీలం",
+      "పచ్చ",
+      "పసుపు",
+      "నేరేడు",
+      "నారింజ"
+    ],
+    "round2_letters": [
+      "అ",
+      "క",
+      "మ",
+      "చ",
+      "ప",
+      "ర",
+      "స",
+      "త"
+    ],
+    "round3_mixed": [
+      "ఎరుపు",
+      "నీలం",
+      "పచ్చ",
+      "అ",
+      "క",
+      "మ"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "వుగ్",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "బిఫ్",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "జోట్",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ప్లింక్",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "స్ట్రోప్",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "బ్లాంట్",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "చెట్టు",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "చెట్టు",
+          "is_target": true
+        },
+        {
+          "text": "గడియారం",
+          "is_target": false
+        },
+        {
+          "text": "సూర్యుడు",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "ధైర్యవంతమైన చిన్న కుక్క పిల్ల",
+    "text": "లియో ఒక ప్రశాంతమైన గ్రామంలో నివసించే చిన్న గోధుమ రంగు కుక్కపిల్ల. ఒక మధ్యాహ్నం, లియోకి ఒక పాత పాక వెనుక దారి తప్పిన పిల్లి పిల్ల కనిపించింది. అది ఆ పిల్లి పిల్లను దాని తల్లి వద్దకు చేర్చడానికి మెల్లగా మొరిగింది.",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "లియో ఏ రకమైన జంతువు?",
+        "options": [
+          "చిన్న గోధుమ రంగు కుక్కపిల్ల",
+          "చిన్న పిల్లి",
+          "పెద్ద గుర్రం"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "లియోకి పిల్లి పిల్ల ఎక్కడ కనిపించింది?",
+        "options": [
+          "పార్కులో",
+          "పాత పాక వెనుక",
+          "ఇంటి లోపల"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "లియో పిల్లి పిల్లకి ఎలా సహాయం చేసింది?",
+        "options": [
+          "పారిపోయి",
+          "మెల్లగా మొరిగి",
+          "చెట్టు ఎక్కి"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

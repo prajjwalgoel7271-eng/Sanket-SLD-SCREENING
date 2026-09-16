@@ -1,0 +1,158 @@
+{
+  "language": "Hindi",
+  "code": "hi",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "कौन सा शब्द 'बिल्ली' से तुक मिलाता है?",
+      "target_word": "दिल्ली",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "दिल्ली",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "कुत्ता",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "सूरज",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "कौन सा शब्द 'तारा' से तुक मिलाता है?",
+      "target_word": "कार",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "कार",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "पानी",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "मछली",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "कौन सा शब्द 'रात' से तुक मिलाता है?",
+      "target_word": "बात",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "बात",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "गेंद",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "पेड़",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "कौन सा शब्द /स/ की ध्वनि से शुरू होता है?",
+      "target_word": "सूरज",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "सूरज",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "चाँद",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "पेड़",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "बाएँ तारे से दाएँ तारे तक बीच की रेखा के ऊपर उंगली चलाएँ!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

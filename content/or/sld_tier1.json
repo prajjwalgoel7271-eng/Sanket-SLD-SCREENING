@@ -1,0 +1,158 @@
+{
+  "language": "Odia",
+  "code": "or",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "କେଉଁ ଶବ୍ଦଟି 'ବିଲେଇ' ସହ ଛନ୍ଦ ମିଶାଏ?",
+      "target_word": "ଜିଲେଇ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ଜିଲେଇ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "କୁକୁର",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ସୂର୍ଯ୍ୟ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "କେଉଁ ଶବ୍ଦଟି 'ତାରା' ସହ ଛନ୍ଦ ମିଶାଏ?",
+      "target_word": "ଧାରା",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ଧାରା",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ପାଣି",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ମାଛ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "କେଉଁ ଶବ୍ଦଟି 'ରାତି' ସହ ଛନ୍ଦ ମିଶାଏ?",
+      "target_word": "ଛାତି",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ଛାତି",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ବଲ୍",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ଗଛ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "କେଉଁ ଶବ୍ଦଟି /ସ/ ଧ୍ୱନିରୁ ଆରମ୍ଭ ହୁଏ?",
+      "target_word": "ସୂର୍ଯ୍ୟ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ସୂର୍ଯ୍ୟ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ଜାହ୍ନବୀ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ଗଛ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "ବାମ ତାରାରୁ ଡାହାଣ ତାରା ପର୍ଯ୍ୟନ୍ତ ମଝି ରେଖା ଉପରେ ଅଙ୍ଗୁଳି ବୁଲାନ୍ତୁ!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

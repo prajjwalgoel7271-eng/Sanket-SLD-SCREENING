@@ -1,0 +1,102 @@
+{
+  "language": "Kannada",
+  "code": "kn",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'ಕಾಮ' ಪದದೊಂದಿಗೆ ಪ್ರಾಸಬದ್ಧವಾದ ಪದ ಯಾವುದು?",
+      "options": [
+        "ನಾಮ",
+        "ದಿನ",
+        "ಮನೆ"
+      ],
+      "correct": "ನಾಮ",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'ಆಟ' ಪದದೊಂದಿಗೆ ಪ್ರಾಸಬದ್ಧವಾದ ಪದ ಯಾವುದು?",
+      "options": [
+        "ಪಾಠ",
+        "ನೀರು",
+        "ಪುಸ್ತಕ"
+      ],
+      "correct": "ಪಾಠ",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'ಸೂರ್ಯ' ಪದದ ಮೊದಲ ಶಬ್ದ ಯಾವುದು?",
+      "options": [
+        "/ಸೂ/",
+        "/ಮ/",
+        "/ಬ/"
+      ],
+      "correct": "/ಸೂ/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'ರಾತ್ರಿ' ಪದದ ಕೊನೆಯ ಶಬ್ದ ಯಾವುದು?",
+      "options": [
+        "/ತ್ರಿ/",
+        "/ಬ/",
+        "/ರ/"
+      ],
+      "correct": "/ತ್ರಿ/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "ಈ ಶಬ್ದಗಳನ್ನು ಸೇರಿಸಿ: /ಕ/ - /ಮ/ - /ಲ/",
+      "options": [
+        "ಕಮಲ",
+        "ಕಾಲ",
+        "ಮಲಕ"
+      ],
+      "correct": "ಕಮಲ",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'ಬೆಕ್ಕು' ಪದದಲ್ಲಿ ಎಷ್ಟು ಶಬ್ದಗಳಿವೆ?",
+      "options": [
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": "2",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "ವಿಭಿನ್ನ ಮೊದಲ ಶಬ್ದದಿಂದ ಪ್ರಾರಂಭವಾಗುವ ಪದ ಯಾವುದು?",
+      "options": [
+        "ಸೇಬು",
+        "ಸೀಬೆ",
+        "ನಾಯಿ"
+      ],
+      "correct": "ನಾಯಿ",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "ವಿಭಿನ್ನ ಶಬ್ದದಿಂದ ಕೊನೆಗೊಳ್ಳುವ ಪದ ಯಾವುದು?",
+      "options": [
+        "ಬಸ್ಸು",
+        "ಹಸ್ಸು",
+        "ಕೆಲಸ"
+      ],
+      "correct": "ಕೆಲಸ",
+      "difficulty": "hard"
+    }
+  ]
+}

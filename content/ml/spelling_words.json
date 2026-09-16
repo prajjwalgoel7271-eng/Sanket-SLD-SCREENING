@@ -1,0 +1,34 @@
+{
+  "language": "Malayalam",
+  "code": "ml",
+  "words": [
+    {
+      "target": "പൂച്ച",
+      "type": "real"
+    },
+    {
+      "target": "കപ്പൽ",
+      "type": "real"
+    },
+    {
+      "target": "തവള",
+      "type": "real"
+    },
+    {
+      "target": "ചാടുക",
+      "type": "real"
+    },
+    {
+      "target": "രാത്രി",
+      "type": "real"
+    },
+    {
+      "target": "ഡ്രിമ്പ്",
+      "type": "pseudo"
+    },
+    {
+      "target": "സ്പ്ലിംഗ്",
+      "type": "pseudo"
+    }
+  ]
+}

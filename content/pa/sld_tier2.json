@@ -1,0 +1,187 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "tier": 2,
+  "dyslexia": {
+    "comprehension_passage": {
+      "title": "ਛੋਟਾ ਬਹਾਦਰ ਪਿੱਲਾ",
+      "text": "ਲੀਓ ਇੱਕ ਛੋਟਾ ਭੂਰਾ ਪਿੱਲਾ ਹੈ ਜੋ ਇੱਕ ਸ਼ਾਂਤ ਪਿੰਡ ਵਿੱਚ ਰਹਿੰਦਾ ਹੈ। ਇੱਕ ਦੁਪਹਿਰ, ਲੀਓ ਨੂੰ ਪੁਰਾਣੇ ਵਾੜੇ ਦੇ ਪਿੱਛੇ ਇੱਕ ਗੁਆਚਿਆ ਬਿੱਲੀ ਦਾ ਬੱਚਾ ਮਿਲਿਆ। ਉਸਨੇ ਬਿੱਲੀ ਦੇ ਬੱਚੇ ਨੂੰ ਉਸਦੀ ਮਾਂ ਕੋਲ ਪਹੁੰਚਾਉਣ ਲਈ ਹੌਲੀ ਜਿਹੀ ਭੌਂਕਿਆ।",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "ਲੀਓ ਕਿਸ ਤਰ੍ਹਾਂ ਦਾ ਜਾਨਵਰ ਹੈ?",
+          "options": [
+            "ਛੋਟਾ ਭੂਰਾ ਪਿੱਲਾ",
+            "ਛੋਟੀ ਬਿੱਲੀ",
+            "ਵੱਡਾ ਘੋੜਾ"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "q2",
+          "question": "ਲੀਓ ਨੂੰ ਬਿੱਲੀ ਦਾ ਬੱਚਾ ਕਿੱਥੇ ਮਿਲਿਆ?",
+          "options": [
+            "ਪਾਰਕ ਵਿੱਚ",
+            "ਪੁਰਾਣੇ ਵਾੜੇ ਦੇ ਪਿੱਛੇ",
+            "ਘਰ ਦੇ ਅੰਦਰ"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "q3",
+          "question": "ਲੀਓ ਨੇ ਬਿੱਲੀ ਦੇ ਬੱਚੇ ਦੀ ਮਦਦ ਕਿਵੇਂ ਕੀਤੀ?",
+          "options": [
+            "ਭੱਜ ਕੇ",
+            "ਹੌਲੀ ਜਿਹੀ ਭੌਂਕ ਕੇ",
+            "ਰੁੱਖ 'ਤੇ ਚੜ੍ਹ ਕੇ"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    "spelling": [
+      {
+        "target": "ਰੁੱਖ",
+        "type": "real"
+      },
+      {
+        "target": "ਘੜੀ",
+        "type": "real"
+      },
+      {
+        "target": "ਸੂਰਜ",
+        "type": "real"
+      },
+      {
+        "target": "ਸਟ੍ਰੋਪ",
+        "type": "pseudo"
+      },
+      {
+        "target": "ਫਲਿਮ",
+        "type": "pseudo"
+      }
+    ]
+  },
+  "dyscalculia": {
+    "magnitude_comparison": [
+      {
+        "id": "m1",
+        "num1": 8,
+        "num2": 3,
+        "correct_larger": 8
+      },
+      {
+        "id": "m2",
+        "num1": 14,
+        "num2": 19,
+        "correct_larger": 19
+      },
+      {
+        "id": "m3",
+        "num1": 25,
+        "num2": 17,
+        "correct_larger": 25
+      },
+      {
+        "id": "m4",
+        "num1": 6,
+        "num2": 11,
+        "correct_larger": 11
+      },
+      {
+        "id": "m5",
+        "num1": 32,
+        "num2": 28,
+        "correct_larger": 32
+      }
+    ],
+    "fact_retrieval": [
+      {
+        "id": "f1",
+        "expr": "2 + 3",
+        "answer": 5,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f2",
+        "expr": "5 + 5",
+        "answer": 10,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f3",
+        "expr": "9 - 4",
+        "answer": 5,
+        "instant_threshold_sec": 2.0
+      },
+      {
+        "id": "f4",
+        "expr": "4 + 4",
+        "answer": 8,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f5",
+        "expr": "10 - 3",
+        "answer": 7,
+        "instant_threshold_sec": 2.2
+      }
+    ],
+    "number_sequence": [
+      {
+        "id": "seq1",
+        "prompt": "2, 4, 6, _",
+        "options": [
+          7,
+          8,
+          9
+        ],
+        "correct": 8
+      },
+      {
+        "id": "seq2",
+        "prompt": "5, 10, 15, _",
+        "options": [
+          20,
+          25,
+          30
+        ],
+        "correct": 20
+      },
+      {
+        "id": "seq3",
+        "prompt": "10, 9, 8, _",
+        "options": [
+          6,
+          7,
+          5
+        ],
+        "correct": 7
+      },
+      {
+        "id": "seq4",
+        "prompt": "3, 6, 9, _",
+        "options": [
+          10,
+          11,
+          12
+        ],
+        "correct": 12
+      }
+    ]
+  },
+  "dysgraphia": {
+    "dictated_sentences": [
+      {
+        "id": "ds1",
+        "level": "simple",
+        "text": "ਸੂਰਜ ਬਹੁਤ ਗਰਮ ਹੈ।"
+      },
+      {
+        "id": "ds2",
+        "level": "complex",
+        "text": "ਤੇਜ਼ ਭੂਰੀ ਲੂੰਬੜੀ ਆਲਸੀ ਕੁੱਤੇ ਦੇ ਉੱਪਰੋਂ ਛਲਾਂਗ ਲਗਾਉਂਦੀ ਹੈ।"
+      }
+    ]
+  }
+}

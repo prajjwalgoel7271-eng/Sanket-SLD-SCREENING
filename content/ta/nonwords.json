@@ -1,0 +1,54 @@
+{
+  "language": "Tamil",
+  "code": "ta",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "வக்",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "பிஃப்",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "ஜாட்",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "பிளிங்க்",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "ஸ்ட்ராப்",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "பிளான்ட்",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "ஃபிளிம்பர்",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "ஸ்ப்ராட்டில்",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

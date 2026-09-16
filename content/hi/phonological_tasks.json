@@ -1,0 +1,102 @@
+{
+  "language": "Hindi",
+  "code": "hi",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'काम' शब्द के साथ कौन सा शब्द तुकबंदी करता है?",
+      "options": [
+        "नाम",
+        "दिन",
+        "घर"
+      ],
+      "correct": "नाम",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'रोटी' शब्द के साथ कौन सा शब्द तुकबंदी करता है?",
+      "options": [
+        "छोटी",
+        "पानी",
+        "किताब"
+      ],
+      "correct": "छोटी",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'सूरज' शब्द की पहली ध्वनि क्या है?",
+      "options": [
+        "/स/",
+        "/म/",
+        "/ब/"
+      ],
+      "correct": "/स/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'रात' शब्द की आखिरी ध्वनि क्या है?",
+      "options": [
+        "/त/",
+        "/ब/",
+        "/र/"
+      ],
+      "correct": "/त/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "इन ध्वनियों को एक साथ मिलाएं: /क/ - /म/ - /ल/",
+      "options": [
+        "कमल",
+        "कल",
+        "नमक"
+      ],
+      "correct": "कमल",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'किताब' शब्द में कितनी अलग ध्वनियाँ हैं?",
+      "options": [
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "3",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "कौन सा शब्द एक अलग पहली ध्वनि से शुरू होता है?",
+      "options": [
+        "सेब",
+        "सांप",
+        "कुत्ता"
+      ],
+      "correct": "कुत्ता",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "कौन सा शब्द एक अलग ध्वनि के साथ समाप्त होता है?",
+      "options": [
+        "बस",
+        "रस",
+        "काम"
+      ],
+      "correct": "काम",
+      "difficulty": "hard"
+    }
+  ]
+}

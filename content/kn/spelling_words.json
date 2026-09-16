@@ -1,0 +1,34 @@
+{
+  "language": "Kannada",
+  "code": "kn",
+  "words": [
+    {
+      "target": "ಬೆಕ್ಕು",
+      "type": "real"
+    },
+    {
+      "target": "ಹಡಗು",
+      "type": "real"
+    },
+    {
+      "target": "ಕಪ್ಪೆ",
+      "type": "real"
+    },
+    {
+      "target": "ಜಿಗಿ",
+      "type": "real"
+    },
+    {
+      "target": "ರಾತ್ರಿ",
+      "type": "real"
+    },
+    {
+      "target": "ಡ್ರಿಂಪ್",
+      "type": "pseudo"
+    },
+    {
+      "target": "ಸ್ಪ್ಲಿಂಗ್",
+      "type": "pseudo"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "language": "Tamil",
+  "code": "ta",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "சிகப்பு",
+      "நீலம்",
+      "பச்சை",
+      "மஞ்சள்",
+      "ஊதா",
+      "ஆரஞ்சு"
+    ],
+    "round2_letters": [
+      "அ",
+      "க",
+      "ம",
+      "ச",
+      "ப",
+      "ர",
+      "ச",
+      "த"
+    ],
+    "round3_mixed": [
+      "சிகப்பு",
+      "நீலம்",
+      "பச்சை",
+      "அ",
+      "க",
+      "ம"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "வுக்",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "பிஃப்",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ஜோட்",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ப்ளிங்க்",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ஸ்ட்ராப்",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ப்ளான்ட்",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "மரம்",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "மரம்",
+          "is_target": true
+        },
+        {
+          "text": "கடிகாரம்",
+          "is_target": false
+        },
+        {
+          "text": "சூரியன்",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "தைரியமான சிறிய நாய்க்குட்டி",
+    "text": "லியோ என்பது ஒரு அமைதியான கிராமத்தில் வாழும் ஒரு சிறிய பழுப்பு நிற நாய்க்குட்டி. ஒரு நாள் மதியம், லியோ பழைய கொட்டகைக்கு பின்னால் ஒரு தொலைந்த பூனைக்குட்டியைக் கண்டது. அது பூனைக்குட்டியை அதன் தாயிடம் வழிநடத்த மெதுவாக குரைத்தது.",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "லியோ என்ன வகையான விலங்கு?",
+        "options": [
+          "ஒரு சிறிய பழுப்பு நாய்க்குட்டி",
+          "ஒரு சிறிய பூனை",
+          "ஒரு பெரிய குதிரை"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "லியோ பூனைக்குட்டியை எங்கே கண்டது?",
+        "options": [
+          "பூங்காவில்",
+          "பழைய கொட்டகைக்கு பின்னால்",
+          "வீட்டிற்குள்"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "லியோ பூனைக்குட்டிக்கு எப்படி உதவியது?",
+        "options": [
+          "ஓடிபோய்",
+          "மெதுவாக குரைத்து",
+          "மரத்தில ஏறி"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

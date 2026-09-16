@@ -1,0 +1,135 @@
+{
+  "language": "Malayalam",
+  "code": "ml",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "ചുവപ്പ്",
+      "നീല",
+      "പച്ച",
+      "മഞ്ഞ",
+      "ധൂമ്രനൂൽ",
+      "ഓറഞ്ച്"
+    ],
+    "round2_letters": [
+      "അ",
+      "ക",
+      "മ",
+      "ച",
+      "പ",
+      "ര",
+      "സ",
+      "ത"
+    ],
+    "round3_mixed": [
+      "ചുവപ്പ്",
+      "നീല",
+      "പച്ച",
+      "അ",
+      "ക",
+      "മ"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "വൂഗ്",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ബിഫ്",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "സോട്ട്",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "പ്ലിങ്ക്",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "സ്ട്രോപ്പ്",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ബ്ലാന്റ്",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "മരം",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "മരം",
+          "is_target": true
+        },
+        {
+          "text": "ഘടികാരം",
+          "is_target": false
+        },
+        {
+          "text": "സൂര്യൻ",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "ധൈര്യശാലിയായ ചെറിയ നായ്ക്കുട്ടി",
+    "text": "ലിയോ എന്നത് ഒരു ശാന്തമായ ഗ്രാമത്തിൽ ജീവിക്കുന്ന ഒരു ചെറിയ തവിട്ടു നായ്ക്കുട്ടിയാണ്. ഒരു ഉച്ചകഴിഞ്ഞ്, പഴയ തൊഴുത്തിന് പിന്നിൽ ലിയോ ഒരു വഴിതെറ്റിയ പൂച്ചക്കുട്ടിയെ കണ്ടു. പൂച്ചക്കുട്ടിയെ അമ്മയുടെ അടുത്തേക്ക് നയിക്കാൻ അത് മെല്ലെ കുരച്ചു.",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "ലിയോ ഏത് തരത്തിലുള്ള മൃഗമാണ്?",
+        "options": [
+          "ചെറിയ തവിട്ടു നായ്ക്കുട്ടി",
+          "ചെറിയ പൂച്ച",
+          "വലിയ കുതിര"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "ലിയോ പൂച്ചക്കുട്ടിയെ എവിടെയാണ് കണ്ടത്?",
+        "options": [
+          "പാർക്കിൽ",
+          "പഴയ തൊഴുത്തിന് പിന്നിൽ",
+          "വീട്ടിനുള്ളിൽ"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "ലിയോ പൂച്ചക്കുട്ടിയെ എങ്ങനെയാണ് സഹായിച്ചത്?",
+        "options": [
+          "ഓടിപ്പോയി",
+          "മെല്ലെ കുരച്ച്",
+          "മരത്തിൽ കയറി"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

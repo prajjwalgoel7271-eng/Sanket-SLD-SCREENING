@@ -1,0 +1,34 @@
+{
+  "language": "Urdu",
+  "code": "ur",
+  "words": [
+    {
+      "target": "بلی",
+      "type": "real"
+    },
+    {
+      "target": "جہاز",
+      "type": "real"
+    },
+    {
+      "target": "مینڈک",
+      "type": "real"
+    },
+    {
+      "target": "کودنا",
+      "type": "real"
+    },
+    {
+      "target": "رات",
+      "type": "real"
+    },
+    {
+      "target": "ڈرمپ",
+      "type": "pseudo"
+    },
+    {
+      "target": "اسپلنگ",
+      "type": "pseudo"
+    }
+  ]
+}

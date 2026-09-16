@@ -1,0 +1,108 @@
+{
+  "language": "Malayalam",
+  "code": "ml",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Malayalam)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "അ",
+        "ക",
+        "മ",
+        "ച",
+        "പ",
+        "ര",
+        "സ",
+        "ത",
+        "ന",
+        "ല"
+      ],
+      "target_words": [
+        "അ",
+        "ക",
+        "മ",
+        "ച",
+        "പ",
+        "ര",
+        "സ",
+        "ത",
+        "ന",
+        "ല"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Malayalam)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "2",
+        "6",
+        "4",
+        "9",
+        "7",
+        "3",
+        "5",
+        "8",
+        "1"
+      ],
+      "target_words": [
+        "രണ്ട്",
+        "ആറ്",
+        "നാല്",
+        "ഒൻപത്",
+        "ഏഴ്",
+        "മൂന്ന്",
+        "അഞ്ച്",
+        "എട്ട്",
+        "ഒന്ന്"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Malayalam)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "ചുവപ്പ്",
+        "നീല",
+        "പച്ച",
+        "മഞ്ഞ",
+        "പർപ്പിൾ",
+        "ഓറഞ്ച്"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Malayalam)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "നക്ഷത്രം",
+        "ആപ്പിൾ",
+        "പൂച്ച",
+        "കാർ",
+        "താക്കോൽ",
+        "പന്ത്"
+      ]
+    }
+  ]
+}

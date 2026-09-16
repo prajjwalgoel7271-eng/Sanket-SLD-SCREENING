@@ -1,0 +1,102 @@
+{
+  "language": "Tamil",
+  "code": "ta",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'பல்' என்ற சொல்லுடன் எதுகை ஒலிக்கும் சொல் எது?",
+      "options": [
+        "கல்",
+        "நாள்",
+        "வீடு"
+      ],
+      "correct": "கல்",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'மாடு' என்ற சொல்லுடன் எதுகை ஒலிக்கும் சொல் எது?",
+      "options": [
+        "காடு",
+        "நீர்",
+        "புத்தகம்"
+      ],
+      "correct": "காடு",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'சூரியன்' என்ற சொல்லின் முதல் ஒலி என்ன?",
+      "options": [
+        "/சூ/",
+        "/ம/",
+        "/ப/"
+      ],
+      "correct": "/சூ/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'படம்' என்ற சொல்லின் கடைசி ஒலி என்ன?",
+      "options": [
+        "/ம்/",
+        "/ப்/",
+        "/ர்/"
+      ],
+      "correct": "/ம்/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "இந்த ஒலிகளை ஒன்றாகச் சேர்க்கவும்: /ப/ - /ட/ - /ம்/",
+      "options": [
+        "படம்",
+        "பல்",
+        "பாடம்"
+      ],
+      "correct": "படம்",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'கண்' என்ற சொல்லில் எத்தனை ஒலிகள் உள்ளன?",
+      "options": [
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": "2",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "வெவ்வேறு முதல் ஒலியுடன் தொடங்கும் சொல் எது?",
+      "options": [
+        "செடி",
+        "செருப்பு",
+        "நாய்"
+      ],
+      "correct": "நாய்",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "வெவ்வேறு ஒலியுடன் முடிவடையும் சொல் எது?",
+      "options": [
+        "பந்து",
+        "வந்து",
+        "கல்"
+      ],
+      "correct": "கல்",
+      "difficulty": "hard"
+    }
+  ]
+}

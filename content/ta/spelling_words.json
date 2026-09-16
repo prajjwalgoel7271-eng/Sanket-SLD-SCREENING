@@ -1,0 +1,34 @@
+{
+  "language": "Tamil",
+  "code": "ta",
+  "words": [
+    {
+      "target": "பூனை",
+      "type": "real"
+    },
+    {
+      "target": "கப்பல்",
+      "type": "real"
+    },
+    {
+      "target": "தவளை",
+      "type": "real"
+    },
+    {
+      "target": "குதி",
+      "type": "real"
+    },
+    {
+      "target": "இரவு",
+      "type": "real"
+    },
+    {
+      "target": "ட்ரிம்ப்",
+      "type": "pseudo"
+    },
+    {
+      "target": "ஸ்ப்ளிங்",
+      "type": "pseudo"
+    }
+  ]
+}

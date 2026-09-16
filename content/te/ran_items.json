@@ -1,0 +1,108 @@
+{
+  "language": "Telugu",
+  "code": "te",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Telugu)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "అ",
+        "క",
+        "మ",
+        "చ",
+        "ప",
+        "ర",
+        "స",
+        "త",
+        "న",
+        "ల"
+      ],
+      "target_words": [
+        "అ",
+        "క",
+        "మ",
+        "చ",
+        "ప",
+        "ర",
+        "స",
+        "త",
+        "న",
+        "ల"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Telugu)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "2",
+        "6",
+        "4",
+        "9",
+        "7",
+        "3",
+        "5",
+        "8",
+        "1"
+      ],
+      "target_words": [
+        "రెండు",
+        "ఆరు",
+        "నాలుగు",
+        "తొమ్మిది",
+        "ఏడు",
+        "మూడు",
+        "ఐదు",
+        "ఎనిమిది",
+        "ఒకటి"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Telugu)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "ఎరుపు",
+        "నీలం",
+        "ఆకుపచ్చ",
+        "పసుపు",
+        "ఊదా",
+        "నారింజ"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Telugu)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "నక్షత్రం",
+        "ఆపిల్",
+        "పిల్లి",
+        "కారు",
+        "తాళంచెవి",
+        "బంతి"
+      ]
+    }
+  ]
+}

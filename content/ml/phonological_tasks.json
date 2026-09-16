@@ -1,0 +1,102 @@
+{
+  "language": "Malayalam",
+  "code": "ml",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'പാട്ട്' എന്ന പദത്തോട് പ്രാസമുള്ള പദം ഏത്?",
+      "options": [
+        "കാട്ട്",
+        "പകൽ",
+        "വീട്"
+      ],
+      "correct": "കാട്ട്",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'മാല' എന്ന പദത്തോട് പ്രാസമുള്ള പദം ഏത്?",
+      "options": [
+        "പാല",
+        "വെള്ളം",
+        "പുസ്തകം"
+      ],
+      "correct": "പാല",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'സൂര്യൻ' എന്ന പദത്തിലെ ആദ്യ ശബ്ദം ഏത്?",
+      "options": [
+        "/സൂ/",
+        "/മ/",
+        "/ബ/"
+      ],
+      "correct": "/സൂ/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'രാത്രി' എന്ന പദത്തിലെ അവസാന ശബ്ദം ഏത്?",
+      "options": [
+        "/ത്രി/",
+        "/ബ/",
+        "/ര/"
+      ],
+      "correct": "/ത്രി/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "ഈ ശബ്ദങ്ങൾ ചേർക്കുക: /ക/ - /ട/ - /ൽ/",
+      "options": [
+        "കടൽ",
+        "കാട്",
+        "മണൽ"
+      ],
+      "correct": "കടൽ",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'മഴ' എന്ന പദത്തിൽ എത്ര ശബ്ദങ്ങളുണ്ട്?",
+      "options": [
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": "2",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "വ്യത്യസ്തമായ ആദ്യ ശബ്ദത്തിൽ തുടങ്ങുന്ന പദം ഏത്?",
+      "options": [
+        "സിംഹം",
+        "സൂര്യൻ",
+        "നായ"
+      ],
+      "correct": "നായ",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "വ്യത്യസ്തമായ ശബ്ദത്തിൽ അവസാനിക്കുന്ന പദം ഏത്?",
+      "options": [
+        "ബസ്സ്",
+        "പാസ്സ്",
+        "ജോലി"
+      ],
+      "correct": "ജോലി",
+      "difficulty": "hard"
+    }
+  ]
+}

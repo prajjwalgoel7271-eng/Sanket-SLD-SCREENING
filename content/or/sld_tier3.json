@@ -1,0 +1,135 @@
+{
+  "language": "Odia",
+  "code": "or",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "ନାଲି",
+      "ନୀଳ",
+      "ସବୁଜ",
+      "ହଳଦିଆ",
+      "ବାାଇଗଣି",
+      "କମଳା"
+    ],
+    "round2_letters": [
+      "ଅ",
+      "କ",
+      "ମ",
+      "ଚ",
+      "ପ",
+      "ର",
+      "ସ",
+      "ତ"
+    ],
+    "round3_mixed": [
+      "ନାଲି",
+      "ନୀଳ",
+      "ସବୁଜ",
+      "ଅ",
+      "କ",
+      "ମ"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ୱୁଗ୍",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ବିଫ୍",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ଜୋଟ୍",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ପ୍ଲିଙ୍କ୍",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ଷ୍ଟ୍ରୋପ୍",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ବ୍ଲାଣ୍ଟ୍",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "ଗଛ",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "ଗଛ",
+          "is_target": true
+        },
+        {
+          "text": "ଘଣ୍ଟା",
+          "is_target": false
+        },
+        {
+          "text": "ସୂର୍ଯ୍ୟ",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "ଛୋଟ ସାହସୀ କୁକୁର ଛୁଆ",
+    "text": "ଲିଓ ଏକ ଛୋଟ ବାଦାମୀ କୁକୁର ଛୁଆ ଯିଏ ଏକ ଶାନ୍ତ ଗାଁରେ ରହେ। ଦିନେ ଅପରାହ୍ନରେ, ଲିଓ ପୁରୁଣା ଗୁହାଳ ପଛରେ ଏକ ହଜିଯାଇଥିବା ବିଲେଇ ଛୁଆକୁ ଦେଖିଲା। ସେ ବିଲେଇ ଛୁଆକୁ ତା' ମା' ପାଖକୁ ନେବା ପାଇଁ ଧୀରେ ଧୀରେ ଭୋକିଲା।",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "ଲିଓ କି ପ୍ରକାରର ଜୀବ?",
+        "options": [
+          "ଏକ ଛୋଟ ବାଦାମୀ କୁକୁର ଛୁଆ",
+          "ଏକ ଛୋଟ ବିଲେଇ",
+          "ଏକ ବଡ଼ ଘୋଡ଼ା"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "ଲିଓ ବିଲେଇ ଛୁଆକୁ କେଉଁଠି ପାଇଲା?",
+        "options": [
+          "ଏକ ପାର୍କରେ",
+          "ପୁରୁଣା ଗୁହାଳ ପଛରେ",
+          "ଘର ଭିତରେ"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "ଲିଓ ବିଲେଇ ଛୁଆକୁ କିପରି ସାହାଯ୍ୟ କଲା?",
+        "options": [
+          "ଦୌଡ଼ି ପଳାଇ",
+          "ଧୀରେ ଭୋକି",
+          "ଗଛରେ ଚଢ଼ି"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "language": "Telugu",
+  "code": "te",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "వగ్",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "బిఫ్",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "జాట్",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "ప్లింక్",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "స్ట్రాప్",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "బ్లంట్",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "ఫ్లింబర్",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "స్ప్రాటిల్",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "language": "Odia",
+  "code": "or",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Odia)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "ଅ",
+        "କ",
+        "ମ",
+        "ଚ",
+        "ପ",
+        "ର",
+        "ସ",
+        "ତ",
+        "ନ",
+        "ଲ"
+      ],
+      "target_words": [
+        "ଅ",
+        "କ",
+        "ମ",
+        "ଚ",
+        "ପ",
+        "ର",
+        "ସ",
+        "ତ",
+        "ନ",
+        "ଲ"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Odia)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "୨",
+        "୬",
+        "୪",
+        "୯",
+        "୭",
+        "୩",
+        "୫",
+        "୮",
+        "୧"
+      ],
+      "target_words": [
+        "ଦୁଇ",
+        "ଛଅ",
+        "ଚାରି",
+        "ନଅ",
+        "ସାତ",
+        "ତିନି",
+        "ପାଞ୍ଚ",
+        "ଆଠ",
+        "ଏକ"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Odia)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "ଲାଲ୍",
+        "ନୀଳ",
+        "ସବୁଜ",
+        "ହଳଦିଆ",
+        "ବାଇଗଣୀ",
+        "କମଳା"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Odia)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "ତାରା",
+        "ସେଓ",
+        "ବିରାଡ଼ି",
+        "କାର୍",
+        "ଚାବି",
+        "ବଲ୍"
+      ]
+    }
+  ]
+}

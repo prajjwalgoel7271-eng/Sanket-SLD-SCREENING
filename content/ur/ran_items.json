@@ -1,0 +1,108 @@
+{
+  "language": "Urdu",
+  "code": "ur",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Urdu)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "ا",
+        "ب",
+        "ت",
+        "ج",
+        "د",
+        "س",
+        "ص",
+        "ط",
+        "م",
+        "ن"
+      ],
+      "target_words": [
+        "ا",
+        "ب",
+        "ت",
+        "ج",
+        "د",
+        "س",
+        "ص",
+        "ط",
+        "م",
+        "ن"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Urdu)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "۲",
+        "۶",
+        "۴",
+        "۹",
+        "۷",
+        "۳",
+        "۵",
+        "۸",
+        "۱"
+      ],
+      "target_words": [
+        "دو",
+        "چھ",
+        "چار",
+        "نو",
+        "سات",
+        "تین",
+        "پانچ",
+        "آٹھ",
+        "ایک"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Urdu)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "لال",
+        "نیلا",
+        "ہرا",
+        "پیلا",
+        "جامنی",
+        "نارنجی"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Urdu)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "تارا",
+        "سیب",
+        "بلی",
+        "کار",
+        "چابی",
+        "گیند"
+      ]
+    }
+  ]
+}

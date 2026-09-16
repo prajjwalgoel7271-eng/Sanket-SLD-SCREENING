@@ -1,0 +1,135 @@
+{
+  "language": "Hindi",
+  "code": "hi",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "लाल",
+      "नीला",
+      "हरा",
+      "पीला",
+      "बैंगनी",
+      "नारंगी"
+    ],
+    "round2_letters": [
+      "अ",
+      "क",
+      "म",
+      "च",
+      "प",
+      "र",
+      "स",
+      "त"
+    ],
+    "round3_mixed": [
+      "लाल",
+      "नीला",
+      "हरा",
+      "अ",
+      "क",
+      "म"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "वूग",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "बिफ",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ज़ोट",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "प्लिंक",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "स्ट्रॉप",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ब्लैंट",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "पौधा",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "पौधा",
+          "is_target": true
+        },
+        {
+          "text": "घड़ी",
+          "is_target": false
+        },
+        {
+          "text": "सूरज",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "छोटा बहादुर पिल्ला",
+    "text": "लियो एक छोटा भूरा पिल्ला है जो एक शांत गाँव में रहता है। एक दोपहर, लियो को पुराने खलिहान के पीछे एक खोया हुआ बिल्ली का बच्चा मिला। उसने बिल्ली के बच्चे को उसकी माँ के पास पहुँचाने के लिए धीरे से भौंका।",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "लियो किस प्रकार का जानवर है?",
+        "options": [
+          "एक छोटा भूरा पिल्ला",
+          "एक छोटी बिल्ली",
+          "एक बड़ा घोड़ा"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "लियो को बिल्ली का बच्चा कहाँ मिला?",
+        "options": [
+          "एक पार्क में",
+          "पुराने खलिहान के पीछे",
+          "घर के अंदर"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "लियो ने बिल्ली के बच्चे की मदद कैसे की?",
+        "options": [
+          "भागकर",
+          "धीरे से भौंककर",
+          "पेड़ पर चढ़कर"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

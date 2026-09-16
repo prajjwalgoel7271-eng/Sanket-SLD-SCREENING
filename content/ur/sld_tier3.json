@@ -1,0 +1,135 @@
+{
+  "language": "Urdu",
+  "code": "ur",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "سرخ",
+      "نیلا",
+      "سبز",
+      "پیلا",
+      "جامنی",
+      "نارنجی"
+    ],
+    "round2_letters": [
+      "ا",
+      "ب",
+      "ج",
+      "د",
+      "ر",
+      "س",
+      "م",
+      "ن"
+    ],
+    "round3_mixed": [
+      "سرخ",
+      "نیلا",
+      "سبز",
+      "ا",
+      "ب",
+      "ج"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ووگ",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "بف",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "زوٹ",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "پلنک",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "سٹروپ",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "بلینٹ",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "درخت",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "درخت",
+          "is_target": true
+        },
+        {
+          "text": "گھڑی",
+          "is_target": false
+        },
+        {
+          "text": "سورج",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "چھوٹا بہادر کتا",
+    "text": "لیو ایک چھوٹا بھورا کتا ہے جو ایک پرسکون گاؤں میں رہتا ہے۔ ایک دوپہر، لیو کو پرانے باڑے کے پیچھے ایک بھٹکی ہوئی بلی کا بچہ ملا۔ اس نے بلی کے بچے کو اس کی ماں کے پاس پہنچانے کے لیے آہستہ سے بھونکا۔",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "لیو کس قسم کا جانور ہے؟",
+        "options": [
+          "ایک چھوٹا بھورا کتا",
+          "ایک چھوٹی بلی",
+          "ایک بڑا گھوڑا"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "لیو کو بلی کا بچہ کہاں ملا؟",
+        "options": [
+          "ایک پارک میں",
+          "پرانے باڑے کے پیچھے",
+          "گھر کے اندر"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "لیو نے بلی کے بچے کی مدد کیسے کی؟",
+        "options": [
+          "بھاگ کر",
+          "آہستہ سے بھونک کر",
+          "درخت پر چڑھ کر"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

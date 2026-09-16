@@ -1,0 +1,34 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "words": [
+    {
+      "target": "ਬਿੱਲੀ",
+      "type": "real"
+    },
+    {
+      "target": "ਜਹਾਜ਼",
+      "type": "real"
+    },
+    {
+      "target": "ਡੱਡੂ",
+      "type": "real"
+    },
+    {
+      "target": "ਛਾਲ",
+      "type": "real"
+    },
+    {
+      "target": "ਰਾਤ",
+      "type": "real"
+    },
+    {
+      "target": "ਡਰਿੰਪ",
+      "type": "pseudo"
+    },
+    {
+      "target": "ਸਪਲਿੰਗ",
+      "type": "pseudo"
+    }
+  ]
+}

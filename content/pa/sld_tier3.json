@@ -1,0 +1,135 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "ਲਾਲ",
+      "ਨੀਲਾ",
+      "ਹਰਾ",
+      "ਪੀਲਾ",
+      "ਜਾਮਣੀ",
+      "ਸੰਤਰੀ"
+    ],
+    "round2_letters": [
+      "ੳ",
+      "ਕ",
+      "ਮ",
+      "ਚ",
+      "ਪ",
+      "ਰ",
+      "ਸ",
+      "ਤ"
+    ],
+    "round3_mixed": [
+      "ਲਾਲ",
+      "ਨੀਲਾ",
+      "ਹਰਾ",
+      "ੳ",
+      "ਕ",
+      "ਮ"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ਵੂਗ",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ਬਿਫ",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ਜ਼ੋਟ",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ਪਲਿੰਕ",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ਸਟ੍ਰੋਪ",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ਬਲੈਂਟ",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "ਰੁੱਖ",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "ਰੁੱਖ",
+          "is_target": true
+        },
+        {
+          "text": "ਘੜੀ",
+          "is_target": false
+        },
+        {
+          "text": "ਸੂਰਜ",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "ਛੋਟਾ ਬਹਾਦਰ ਪਿੱਲਾ",
+    "text": "ਲੀਓ ਇੱਕ ਛੋਟਾ ਭੂਰਾ ਪਿੱਲਾ ਹੈ ਜੋ ਇੱਕ ਸ਼ਾਂਤ ਪਿੰਡ ਵਿੱਚ ਰਹਿੰਦਾ ਹੈ। ਇੱਕ ਦੁਪਹਿਰ, ਲੀਓ ਨੂੰ ਪੁਰਾਣੇ ਵਾੜੇ ਦੇ ਪਿੱਛੇ ਇੱਕ ਗੁਆਚਿਆ ਬਿੱਲੀ ਦਾ ਬੱਚਾ ਮਿਲਿਆ। ਉਸਨੇ ਬਿੱਲੀ ਦੇ ਬੱਚੇ ਨੂੰ ਉਸਦੀ ਮਾਂ ਕੋਲ ਪਹੁੰਚਾਉਣ ਲਈ ਹੌਲੀ ਜਿਹੀ ਭੌਂਕਿਆ।",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "ਲੀਓ ਕਿਸ ਤਰ੍ਹਾਂ ਦਾ ਜਾਨਵਰ ਹੈ?",
+        "options": [
+          "ਛੋਟਾ ਭੂਰਾ ਪਿੱਲਾ",
+          "ਛੋਟੀ ਬਿੱਲੀ",
+          "ਵੱਡਾ ਘੋੜਾ"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "ਲੀਓ ਨੂੰ ਬਿੱਲੀ ਦਾ ਬੱਚਾ ਕਿੱਥੇ ਮਿਲਿਆ?",
+        "options": [
+          "ਪਾਰਕ ਵਿੱਚ",
+          "ਪੁਰਾਣੇ ਵਾੜੇ ਦੇ ਪਿੱਛੇ",
+          "ਘਰ ਦੇ ਅੰਦਰ"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "ਲੀਓ ਨੇ ਬਿੱਲੀ ਦੇ ਬੱਚੇ ਦੀ ਮਦਦ ਕਿਵੇਂ ਕੀਤੀ?",
+        "options": [
+          "ਭੱਜ ਕੇ",
+          "ਹੌਲੀ ਜਿਹੀ ਭੌਂਕ ਕੇ",
+          "ਰੁੱਖ 'ਤੇ ਚੜ੍ਹ ਕੇ"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

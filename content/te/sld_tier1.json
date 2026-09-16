@@ -1,0 +1,158 @@
+{
+  "language": "Telugu",
+  "code": "te",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "ఏ పదం 'పిల్లి' తో ప్రాస కలుస్తుంది?",
+      "target_word": "మల్లి",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "మల్లి",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "కుక్క",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "సూర్యుడు",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "ఏ పదం 'తార' తో ప్రాస కలుస్తుంది?",
+      "target_word": "కార",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "కార",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "నీరు",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "చేప",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "ఏ పదం 'రాతి' తో ప్రాస కలుస్తుంది?",
+      "target_word": "చేతి",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "చేతి",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "బంతి",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "చెట్టు",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "ఏ పదం /సు/ శబ్దంతో ప్రారంభమవుతుంది?",
+      "target_word": "సూర్యుడు",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "సూర్యుడు",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "చందురుడు",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "చెట్టు",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "ఎడమ వైపు నక్షత్రం నుండి కుడి వైపు నక్షత్రం వరకు మధ్య గీతపై వేలిని జరపండి!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

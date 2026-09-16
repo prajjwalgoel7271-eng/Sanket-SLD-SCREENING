@@ -1,0 +1,108 @@
+{
+  "language": "Kannada",
+  "code": "kn",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Kannada)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "ಅ",
+        "ಕ",
+        "ಮ",
+        "ಚ",
+        "ಪ",
+        "ರ",
+        "ಸ",
+        "ತ",
+        "ನ",
+        "ಲ"
+      ],
+      "target_words": [
+        "ಅ",
+        "ಕ",
+        "ಮ",
+        "ಚ",
+        "ಪ",
+        "ರ",
+        "ಸ",
+        "ತ",
+        "ನ",
+        "ಲ"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Kannada)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "2",
+        "6",
+        "4",
+        "9",
+        "7",
+        "3",
+        "5",
+        "8",
+        "1"
+      ],
+      "target_words": [
+        "ಎರಡು",
+        "ಆರು",
+        "ನಾಲ್ಕು",
+        "ಒಂಬತ್ತು",
+        "ಏಳು",
+        "ಮೂರು",
+        "ಐದು",
+        "ಎಂಟು",
+        "ಒಂದು"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Kannada)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "ಕೆಂಪು",
+        "ನೀಲಿ",
+        "ಹಸಿರು",
+        "ಹಳದಿ",
+        "ನೇರಳೆ",
+        "ಕಿತ್ತಳೆ"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Kannada)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "ನಕ್ಷತ್ರ",
+        "ಸೇಬು",
+        "ಬೆಕ್ಕು",
+        "ಕಾರು",
+        "ಕೀ",
+        "ಚೆಂಡು"
+      ]
+    }
+  ]
+}

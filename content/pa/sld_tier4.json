@@ -1,0 +1,71 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "tier": 4,
+  "academic_distress_questionnaire": [
+    {
+      "id": "q1",
+      "text": "ਦੂਜਿਆਂ ਸਾਹਮਣੇ ਉੱਚੀ ਪੜ੍ਹਨ ਲਈ ਕਿਹਾ ਜਾਣ 'ਤੇ ਮੈਨੂੰ ਘਬਰਾਹਟ ਹੁੰਦੀ ਹੈ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q2",
+      "text": "ਹਾੜੀਆਂ ਨਾਲੋਂ ਲਿਖਣ ਦਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਲਈ ਮੈਨੂੰ ਵਾਧੂ ਸਮਾਂ ਚਾਹੀਦਾ ਹੈ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q3",
+      "text": "ਹਿਸਾਬ ਦੇ ਔਖੇ ਸਵਾਲ ਦੇਖ ਕੇ ਮੈਨੂੰ ਤਣਾਅ ਮਹਿਸੂਸ ਹੁੰਦਾ ਹੈ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q4",
+      "text": "ਜਵਾਬ ਆਉਂਦੇ ਹੋਏ ਵੀ ਲਿਖਾਈ ਜਾਂ ਲਿਖਣ ਦੀ ਰਫ਼ਤਾਰ ਮੈਨੂੰ ਪਿੱਛੇ ਰੱਖਦੀ ਹੈ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q5",
+      "text": "ਮੈਂ ਲੰਬੇ ਪੈਰੇ ਜਾਂ ਕਿਤਾਬਾਂ ਪੜ੍ਹਨ ਤੋਂ ਬਚਦਾ ਹਾਂ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q6",
+      "text": "ਸਮਝ ਆਉਣ ਦੇ ਬਾਵਜੂਦ ਮੈਂ ਗਣਨਾ ਵਿੱਚ ਗਲਤੀਆਂ ਕਰਦਾ ਹਾਂ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q7",
+      "text": "ਇਮਤਿਹਾਨਾਂ ਦੌਰਾਨ ਮੈਨੂੰ ਸਰੀਰਕ ਥਕਾਵਟ ਮਹਿਸੂਸ ਹੁੰਦੀ ਹੈ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q8",
+      "text": "ਲੇਖ ਲਿਖਣ ਵੇਲੇ ਮੈਨੂੰ ਵਿਚਾਰਾਂ ਨੂੰ ਕਾਗਜ਼ 'ਤੇ ਲਿਖਣ ਵਿੱਚ ਔਖ ਹੁੰਦੀ ਹੈ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q9",
+      "text": "ਮੈਨੂੰ ਚਿੰਤਾ ਹੈ ਕਿ ਮੇਰੀ ਪੜ੍ਹਨ ਦੀ ਰਫ਼ਤਾਰ ਮੇਰੀ ਅਸਲ ਬੁੱਧੀ ਨਹੀਂ ਦਿਖਾਉਂਦੀ।",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q10",
+      "text": "ਮਦਦ ਮੰਗਣ ਤੋਂ ਬਚਣ ਲਈ ਮੈਂ ਸਮਝ ਆਉਣ ਦਾ ਨਾਟਕ ਕਰਦਾ ਹਾਂ।",
+      "domain": "academic_distress"
+    }
+  ],
+  "options": [
+    {
+      "text": "ਕਦੇ ਨਹੀਂ",
+      "score": 0
+    },
+    {
+      "text": "ਕਦੇ-ਕਦੇ",
+      "score": 1
+    },
+    {
+      "text": "ਅਕਸਰ / ਲਗਾਤਾਰ",
+      "score": 2
+    }
+  ]
+}

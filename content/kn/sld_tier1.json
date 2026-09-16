@@ -1,0 +1,158 @@
+{
+  "language": "Kannada",
+  "code": "kn",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "ಯಾವ ಪದವು 'ಬೆಕ್ಕು' ನೊಂದಿಗೆ ಪ್ರಾಸಬದ್ಧವಾಗಿದೆ?",
+      "target_word": "ನೆಕ್ಕು",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ನೆಕ್ಕು",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ನಾಯಿ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ಸೂರ್ಯ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "ಯಾವ ಪದವು 'ತಾರೆ' ನೊಂದಿಗೆ ಪ್ರಾಸಬದ್ಧವಾಗಿದೆ?",
+      "target_word": "ಖಾರ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ಖಾರ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ನೀರು",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ಮೀನು",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "ಯಾವ ಪದವು 'ರಾತ್ರಿ' ನೊಂದಿಗೆ ಪ್ರಾಸಬದ್ಧವಾಗಿದೆ?",
+      "target_word": "ಪಾತ್ರೆ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ಪಾತ್ರೆ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ಚೆಂಡು",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ಮರ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "ಯಾವ ಪದವು /ಸ/ ಧ್ವನಿಯಿಂದ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ?",
+      "target_word": "ಸೂರ್ಯ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ಸೂರ್ಯ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ಚಂದ್ರ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ಮರ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "ఎడమ వైపు నక్షత్రం నుండి కుడి వైపు నక్షత్రం వరకు మధ్య గీతపై వేలిని జరపండి!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

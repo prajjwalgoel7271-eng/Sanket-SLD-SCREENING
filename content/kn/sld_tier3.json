@@ -1,0 +1,135 @@
+{
+  "language": "Kannada",
+  "code": "kn",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "ಕೆಂಪು",
+      "ನೀಲಿ",
+      "ಹಸಿರು",
+      "ಹಳದಿ",
+      "ನೇರಳೆ",
+      "ಕಿತ್ತಳೆ"
+    ],
+    "round2_letters": [
+      "ಅ",
+      "ಕ",
+      "ಮ",
+      "ಚ",
+      "ಪ",
+      "ರ",
+      "ಸ",
+      "ತ"
+    ],
+    "round3_mixed": [
+      "ಕೆಂಪು",
+      "ನೀಲಿ",
+      "ಹಸಿರು",
+      "ಅ",
+      "ಕ",
+      "ಮ"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ವೂಗ್",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ಬಿಫ್",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ಝೋಟ್",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ಪ್ಲಿಂಕ್",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ಸ್ಟ್ರೋಪ್",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ಬ್ಲ್ಯಾಂಟ್",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "ಮರ",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "ಮರ",
+          "is_target": true
+        },
+        {
+          "text": "ಗಡಿಯಾರ",
+          "is_target": false
+        },
+        {
+          "text": "ಸೂರ್ಯ",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "ಸಣ್ಣ ಧೈರ್ಯಶಾಲಿ ನಾಯಿಮರಿ",
+    "text": "ಲಿಯೋ ಶಾಂತಿಯುತ ಹಳ್ಳಿಯಲ್ಲಿ ವಾಸಿಸುವ ಒಂದು ಸಣ್ಣ ಕಂದು ನಾಯಿಮರಿ. ಒಂದು ಮಧ್ಯಾಹ್ನ, ಲಿಯೋಗೆ ಹಳೆಯ ಕೊಟ್ಟಿಗೆಯ ಹಿಂಭಾಗದಲ್ಲಿ ಕಳೆದುಹೋದ ಬೆಕ್ಕಿನ ಮರಿ ಸಿಕ್ಕಿತು. ಅದು ಬೆಕ್ಕಿನ ಮರಿಯನ್ನು ಅದರ ತಾಯಿಯ ಬಳಿಗೆ ಕರೆದೊಯ್ಯಲು ಮೆಲ್ಲನೆ ಬೊಗಳಿತು.",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "ಲಿಯೋ ಯಾವ ರೀತಿಯ ಪ್ರಾಣಿ?",
+        "options": [
+          "ಒಂದು ಸಣ್ಣ ಕಂದು ನಾಯಿಮರಿ",
+          "ಸಣ್ಣ ಬೆಕ್ಕು",
+          "ದೊಡ್ಡ ಕುದುರೆ"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "ಲಿಯೋಗೆ ಬೆಕ್ಕಿನ ಮರಿ ಎಲ್ಲಿ ಸಿಕ್ಕಿತು?",
+        "options": [
+          "ಪಾರ್ಕ್‌ನಲ್ಲಿ",
+          "ಹಳೆಯ ಕೊಟ್ಟಿಗೆಯ ಹಿಂಭಾಗದಲ್ಲಿ",
+          "ಮನೆಯ ಒಳಗೆ"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "ಲಿಯೋ ಬೆಕ್ಕಿನ ಮರಿಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಿತು?",
+        "options": [
+          "ಓಡಿಹೋಗಿ",
+          "ಮೆಲ್ಲನೆ ಬೊಗಳಿ",
+          "ಮರ ಹತ್ತಿ"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

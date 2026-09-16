@@ -1,0 +1,54 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "ਵਗ",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "ਬਿਫ",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "ਜ਼ੋਟ",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "ਪਲਿੰਕ",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "ਸਟਰੌਪ",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "ਬਲੈਂਟ",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "ਫਲਿੰਬਰ",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "ਸਪਰੋਟਲ",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "language": "Marathi",
+  "code": "mr",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "लाल",
+      "निळा",
+      "हिरवा",
+      "पिवळा",
+      "जांभळा",
+      "नारंगी"
+    ],
+    "round2_letters": [
+      "अ",
+      "क",
+      "म",
+      "च",
+      "प",
+      "र",
+      "स",
+      "त"
+    ],
+    "round3_mixed": [
+      "लाल",
+      "निळा",
+      "हिरवा",
+      "अ",
+      "क",
+      "म"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "वूग",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "बिफ",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "झोट",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "प्लिंक",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "स्ट्रॉप",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ब्लॅंट",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "झाड",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "झाड",
+          "is_target": true
+        },
+        {
+          "text": "घड्याळ",
+          "is_target": false
+        },
+        {
+          "text": "सूर्य",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "लहान शूर पिल्लू",
+    "text": "लिओ हे एका शांत गावात राहणारे लहान तपकिरी पिल्लू आहे. एका दुपारी, लिओला जुन्या गोठ्यामागे एक हरवलेले मांजराचे पिल्लू सापडले. त्याने मांजराच्या पिल्लाला त्याच्या आईकडे नेण्यासाठी हळूच भुंकले.",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "लिओ कोणता प्राणी आहे?",
+        "options": [
+          "लहान तपकिरी पिल्लू",
+          "लहान मांजर",
+          "मोठा घोडा"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "लिओला मांजराचे पिल्लू कुठे सापडले?",
+        "options": [
+          "उद्यानात",
+          "जुन्या गोठ्यामागे",
+          "घराच्या आत"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "लिओने मांजराच्या पिल्लाला कशी मदत केली?",
+        "options": [
+          "पळून जाऊन",
+          "हळूच भुंकून",
+          "झाडावर चढून"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

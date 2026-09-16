@@ -1,0 +1,34 @@
+{
+  "language": "Telugu",
+  "code": "te",
+  "words": [
+    {
+      "target": "పిల్లి",
+      "type": "real"
+    },
+    {
+      "target": "ఓడ",
+      "type": "real"
+    },
+    {
+      "target": "కప్ప",
+      "type": "real"
+    },
+    {
+      "target": "దూకడం",
+      "type": "real"
+    },
+    {
+      "target": "రాత్రి",
+      "type": "real"
+    },
+    {
+      "target": "డ్రింప్",
+      "type": "pseudo"
+    },
+    {
+      "target": "స్ప్లింగ్",
+      "type": "pseudo"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "language": "Punjabi",
+  "code": "pa",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Punjabi)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "ੳ",
+        "ਅ",
+        "ੲ",
+        "ਸ",
+        "ਹ",
+        "ਕ",
+        "ਖ",
+        "ਗ",
+        "ਘ",
+        "ਙ"
+      ],
+      "target_words": [
+        "ੳ",
+        "ਅ",
+        "ੲ",
+        "ਸ",
+        "ਹ",
+        "ਕ",
+        "ਖ",
+        "ਗ",
+        "ਘ",
+        "ਙ"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Punjabi)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "੨",
+        "੬",
+        "੪",
+        "੯",
+        "੭",
+        "੩",
+        "੫",
+        "੮",
+        "੧"
+      ],
+      "target_words": [
+        "ਦੋ",
+        "ਛੇ",
+        "ਚਾਰ",
+        "ਨੌਂ",
+        "ਸੱਤ",
+        "ਤਿੰਨ",
+        "ਪੰਜ",
+        "ਅੱਠ",
+        "ਇੱਕ"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Punjabi)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "ਲਾਲ",
+        "ਨੀਲਾ",
+        "ਹਰਾ",
+        "ਪੀਲਾ",
+        "ਜਾਮਨੀ",
+        "ਸੰਤਰੀ"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Punjabi)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "ਤਾਰਾ",
+        "ਸੇਬ",
+        "ਬਿੱਲੀ",
+        "ਕਾਰ",
+        "ਚਾਬੀ",
+        "ਗੇਂਦ"
+      ]
+    }
+  ]
+}
