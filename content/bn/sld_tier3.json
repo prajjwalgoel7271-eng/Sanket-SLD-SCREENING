@@ -1,0 +1,135 @@
+{
+  "language": "Bengali",
+  "code": "bn",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "লাল",
+      "নীল",
+      "সবুজ",
+      "হলুদ",
+      "বেগুনি",
+      "কমলা"
+    ],
+    "round2_letters": [
+      "অ",
+      "ক",
+      "ম",
+      "চ",
+      "প",
+      "র",
+      "স",
+      "ত"
+    ],
+    "round3_mixed": [
+      "লাল",
+      "নীল",
+      "সবুজ",
+      "অ",
+      "ক",
+      "ম"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "ওয়াগ",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "বিফ",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "জট",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "প্লিঙ্ক",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "স্ট্রপ",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ব্ল্যান্ট",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "গাছ",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "গাছ",
+          "is_target": true
+        },
+        {
+          "text": "ঘড়ি",
+          "is_target": false
+        },
+        {
+          "text": "সূর্য",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "ছোট্ট সাহসী ছানা",
+    "text": "লিও একটি ছোট বাদামী কুকুরছানা যে একটি শান্ত গ্রামে বাস করে। এক বিকেলে, লিও পুরনো গোয়ালঘরের পেছনে একটি হারিয়ে যাওয়া বিড়ালের ছানা দেখতে পেল। সে মৃদু ঘেউ ঘেউ করে বিড়ালের ছানাটিকে তার মায়ের কাছে নিয়ে গেল।",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "লিও কোন ধরণের প্রাণী?",
+        "options": [
+          "একটি ছোট বাদামী কুকুরছানা",
+          "একটি ছোট বিড়াল",
+          "একটি বড় ঘোড়া"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "লিও বিড়ালের ছানাটিকে কোথায় পেয়েছিল?",
+        "options": [
+          "একটি পার্কে",
+          "পুরনো গোয়ালঘরের পেছনে",
+          "ঘরের ভেতরে"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "লিও কিভাবে বিড়ালের ছানাটিকে সাহায্য করেছিল?",
+        "options": [
+          "পালিয়ে গিয়ে",
+          "মৃদু ঘেউ ঘেউ করে",
+          "গাছে উঠে"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

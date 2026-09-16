@@ -1,0 +1,70 @@
+{
+  "language": "English",
+  "code": "en",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "Which word rhymes with CAT?",
+      "options": ["HAT", "DOG", "SUN"],
+      "correct": "HAT",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "Which word rhymes with PIN?",
+      "options": ["WIN", "BOX", "CUP"],
+      "correct": "WIN",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "What is the first sound in the word SUN?",
+      "options": ["/s/", "/m/", "/b/"],
+      "correct": "/s/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "What is the last sound in the word BED?",
+      "options": ["/d/", "/b/", "/t/"],
+      "correct": "/d/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "Blend these sounds together: /c/ - /a/ - /t/",
+      "options": ["CAT", "BAT", "MAT"],
+      "correct": "CAT",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "How many separate sounds are in the word FROG?",
+      "options": ["4", "3", "2"],
+      "correct": "4",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "Which word starts with a DIFFERENT first sound?",
+      "options": ["PIG", "PEN", "DOG"],
+      "correct": "DOG",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "Which word ends with a DIFFERENT sound?",
+      "options": ["BUS", "PLUS", "HOP"],
+      "correct": "HOP",
+      "difficulty": "hard"
+    }
+  ]
+}

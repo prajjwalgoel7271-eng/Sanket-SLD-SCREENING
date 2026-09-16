@@ -1,0 +1,46 @@
+{
+  "language": "English",
+  "code": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Is there a family history of reading, spelling, or learning difficulties?",
+      "options": [{"text": "No", "score": 0}, {"text": "Mild / Unsure", "score": 1}, {"text": "Yes", "score": 2}]
+    },
+    {
+      "id": "q2",
+      "text": "Did the child experience early speech delays or articulation difficulties?",
+      "options": [{"text": "No", "score": 0}, {"text": "Mild", "score": 1}, {"text": "Yes", "score": 2}]
+    },
+    {
+      "id": "q3",
+      "text": "Does the child struggle to learn or recall letter names and sounds?",
+      "options": [{"text": "No", "score": 0}, {"text": "Sometimes", "score": 1}, {"text": "Frequently", "score": 2}]
+    },
+    {
+      "id": "q4",
+      "text": "Does the child have difficulty with nursery rhymes or identifying rhyming words?",
+      "options": [{"text": "No", "score": 0}, {"text": "Sometimes", "score": 1}, {"text": "Frequently", "score": 2}]
+    },
+    {
+      "id": "q5",
+      "text": "Does the child frequently reverse letters (e.g. b/d, p/q) or words when reading/writing?",
+      "options": [{"text": "No", "score": 0}, {"text": "Occasional (Age 6-7)", "score": 1}, {"text": "Persistent", "score": 2}]
+    },
+    {
+      "id": "q6",
+      "text": "Does the child actively avoid reading tasks or express anxiety about reading aloud?",
+      "options": [{"text": "No", "score": 0}, {"text": "Mild avoidance", "score": 1}, {"text": "Strong avoidance", "score": 2}]
+    },
+    {
+      "id": "q7",
+      "text": "Does reading homework take significantly longer than expected for their age?",
+      "options": [{"text": "No", "score": 0}, {"text": "Moderately longer", "score": 1}, {"text": "Much longer", "score": 2}]
+    },
+    {
+      "id": "q8",
+      "text": "Has a teacher or tutor expressed concern about reading fluency or decoding skills?",
+      "options": [{"text": "No", "score": 0}, {"text": "Informal concern", "score": 1}, {"text": "Formal concern", "score": 2}]
+    }
+  ]
+}

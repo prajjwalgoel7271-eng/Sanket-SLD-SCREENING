@@ -1,0 +1,108 @@
+{
+  "language": "Bengali",
+  "code": "bn",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Bengali)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "অ",
+        "ক",
+        "ম",
+        "চ",
+        "প",
+        "র",
+        "স",
+        "ত",
+        "ন",
+        "ল"
+      ],
+      "target_words": [
+        "অ",
+        "ক",
+        "ম",
+        "চ",
+        "প",
+        "র",
+        "স",
+        "ত",
+        "ন",
+        "ল"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Bengali)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "২",
+        "৬",
+        "৪",
+        "৯",
+        "৭",
+        "৩",
+        "৫",
+        "৮",
+        "১"
+      ],
+      "target_words": [
+        "দুই",
+        "ছয়",
+        "চার",
+        "নয়",
+        "সাত",
+        "তিন",
+        "পাঁচ",
+        "আট",
+        "এক"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Bengali)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "লাল",
+        "নীল",
+        "সবুজ",
+        "হলুদ",
+        "বেগুনি",
+        "কমলা"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Bengali)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "তারা",
+        "আপেল",
+        "বিড়াল",
+        "গাড়ি",
+        "চাবি",
+        "বল"
+      ]
+    }
+  ]
+}

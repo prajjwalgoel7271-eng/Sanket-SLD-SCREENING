@@ -1,0 +1,102 @@
+{
+  "language": "Bhojpuri",
+  "code": "bho",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'काम' शब्द के साथ कवन शब्द के तुक मिलेला?",
+      "options": [
+        "नाम",
+        "दिन",
+        "घर"
+      ],
+      "correct": "नाम",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'रोटी' शब्द के साथ कवन शब्द के तुक मिलेला?",
+      "options": [
+        "छोटी",
+        "पानी",
+        "किताब"
+      ],
+      "correct": "छोटी",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'सूरज' शब्द के पहिला आवाज का ह?",
+      "options": [
+        "/स/",
+        "/म/",
+        "/ब/"
+      ],
+      "correct": "/स/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'रात' शब्द के आखिरी आवाज का ह?",
+      "options": [
+        "/त/",
+        "/ब/",
+        "/र/"
+      ],
+      "correct": "/त/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "ई आवाज सभ के एक साथ मिलाईं: /क/ - /म/ - /ल/",
+      "options": [
+        "कमल",
+        "कल",
+        "नमक"
+      ],
+      "correct": "कमल",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'किताब' शब्द में केतना अलग-अलग आवाज बा?",
+      "options": [
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "3",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "कवन शब्द अलग पहिला आवाज से शुरू होला?",
+      "options": [
+        "सेव",
+        "साँप",
+        "कुकुर"
+      ],
+      "correct": "कुकुर",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "कवन शब्द अलग आवाज के साथ खतम होला?",
+      "options": [
+        "बस",
+        "रस",
+        "काम"
+      ],
+      "correct": "काम",
+      "difficulty": "hard"
+    }
+  ]
+}

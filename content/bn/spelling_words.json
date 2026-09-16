@@ -1,0 +1,34 @@
+{
+  "language": "Bengali",
+  "code": "bn",
+  "words": [
+    {
+      "target": "বিড়াল",
+      "type": "real"
+    },
+    {
+      "target": "জাহাজ",
+      "type": "real"
+    },
+    {
+      "target": "ব্যাঙ",
+      "type": "real"
+    },
+    {
+      "target": "লাফ",
+      "type": "real"
+    },
+    {
+      "target": "রাত",
+      "type": "real"
+    },
+    {
+      "target": "ড্রিম্প",
+      "type": "pseudo"
+    },
+    {
+      "target": "স্প্লিং",
+      "type": "pseudo"
+    }
+  ]
+}

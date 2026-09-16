@@ -1,0 +1,135 @@
+{
+  "language": "Gujarati",
+  "code": "gu",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "લાલ",
+      "વાછળી",
+      "લીલો",
+      "પીળો",
+      "જાંબલી",
+      "કેસરી"
+    ],
+    "round2_letters": [
+      "અ",
+      "ક",
+      "મ",
+      "ચ",
+      "પ",
+      "ર",
+      "સ",
+      "ત"
+    ],
+    "round3_mixed": [
+      "લાલ",
+      "વાછળી",
+      "લીલો",
+      "અ",
+      "ક",
+      "મ"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "વૂગ",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "બિફ",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "ઝોટ",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "પ્લિંક",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "સ્ટ્રોપ",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "બ્લેન્ટ",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "ઝાડ",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "ઝાડ",
+          "is_target": true
+        },
+        {
+          "text": "ઘડિયાળ",
+          "is_target": false
+        },
+        {
+          "text": "સૂરજ",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "નાનું બહાદુર ગલૂડિયું",
+    "text": "લિયો એક શાંત ગામમાં રહેતું નાનું બદામી ગલૂડિયું છે. એક બપોરે, લિયોને જૂના વાડા પાછળ એક ખોવાયેલું બિલાડીનું બચ્ચું મળ્યું. તેણે બિલાડીના બચ્ચાને તેની માતા પાસે પહોંચાડવા ધીમેથી ભસ્યું.",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "લિયો કયા પ્રકારનું પ્રાણી છે?",
+        "options": [
+          "નાનું બદામી ગલૂડિયું",
+          "નાની બિલાડી",
+          "મોટો ઘોડો"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "લિયોને બિલાડીનું બચ્ચું ક્યાં મળ્યું?",
+        "options": [
+          "બગીચામાં",
+          "જૂના વાડા પાછળ",
+          "ઘરની અંદર"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "લિયોએ બિલાડીના બચ્ચાની મદદ કેવી રીતે કરી?",
+        "options": [
+          "ભાગીને",
+          "ધીમેથી ભસીને",
+          "ઝાડ પર ચડીને"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

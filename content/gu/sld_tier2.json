@@ -1,0 +1,187 @@
+{
+  "language": "Gujarati",
+  "code": "gu",
+  "tier": 2,
+  "dyslexia": {
+    "comprehension_passage": {
+      "title": "નાનું બહાદુર ગલૂડિયું",
+      "text": "લિયો એક શાંત ગામમાં રહેતું નાનું બદામી ગલૂડિયું છે. એક બપોરે, લિયોને જૂના વાડા પાછળ એક ખોવાયેલું બિલાડીનું બચ્ચું મળ્યું. તેણે બિલાડીના બચ્ચાને તેની માતા પાસે પહોંચાડવા ધીમેથી ભસ્યું.",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "લિયો કયા પ્રકારનું પ્રાણી છે?",
+          "options": [
+            "નાનું બદામી ગલૂડિયું",
+            "નાની બિલાડી",
+            "મોટો ઘોડો"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "q2",
+          "question": "લિયોને બિલાડીનું બચ્ચું ક્યાં મળ્યું?",
+          "options": [
+            "બગીચામાં",
+            "જૂના વાડા પાછળ",
+            "ઘરની અંદર"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "q3",
+          "question": "લિયોએ બિલાડીના બચ્ચાની મદદ કેવી રીતે કરી?",
+          "options": [
+            "ભાગીને",
+            "ધીમેથી ભસીને",
+            "ઝાડ પર ચડીને"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    "spelling": [
+      {
+        "target": "ઝાડ",
+        "type": "real"
+      },
+      {
+        "target": "ઘડિયાળ",
+        "type": "real"
+      },
+      {
+        "target": "સૂરજ",
+        "type": "real"
+      },
+      {
+        "target": "સ્ટ્રોપ",
+        "type": "pseudo"
+      },
+      {
+        "target": "ફ્લિમ",
+        "type": "pseudo"
+      }
+    ]
+  },
+  "dyscalculia": {
+    "magnitude_comparison": [
+      {
+        "id": "m1",
+        "num1": 8,
+        "num2": 3,
+        "correct_larger": 8
+      },
+      {
+        "id": "m2",
+        "num1": 14,
+        "num2": 19,
+        "correct_larger": 19
+      },
+      {
+        "id": "m3",
+        "num1": 25,
+        "num2": 17,
+        "correct_larger": 25
+      },
+      {
+        "id": "m4",
+        "num1": 6,
+        "num2": 11,
+        "correct_larger": 11
+      },
+      {
+        "id": "m5",
+        "num1": 32,
+        "num2": 28,
+        "correct_larger": 32
+      }
+    ],
+    "fact_retrieval": [
+      {
+        "id": "f1",
+        "expr": "2 + 3",
+        "answer": 5,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f2",
+        "expr": "5 + 5",
+        "answer": 10,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f3",
+        "expr": "9 - 4",
+        "answer": 5,
+        "instant_threshold_sec": 2.0
+      },
+      {
+        "id": "f4",
+        "expr": "4 + 4",
+        "answer": 8,
+        "instant_threshold_sec": 1.8
+      },
+      {
+        "id": "f5",
+        "expr": "10 - 3",
+        "answer": 7,
+        "instant_threshold_sec": 2.2
+      }
+    ],
+    "number_sequence": [
+      {
+        "id": "seq1",
+        "prompt": "2, 4, 6, _",
+        "options": [
+          7,
+          8,
+          9
+        ],
+        "correct": 8
+      },
+      {
+        "id": "seq2",
+        "prompt": "5, 10, 15, _",
+        "options": [
+          20,
+          25,
+          30
+        ],
+        "correct": 20
+      },
+      {
+        "id": "seq3",
+        "prompt": "10, 9, 8, _",
+        "options": [
+          6,
+          7,
+          5
+        ],
+        "correct": 7
+      },
+      {
+        "id": "seq4",
+        "prompt": "3, 6, 9, _",
+        "options": [
+          10,
+          11,
+          12
+        ],
+        "correct": 12
+      }
+    ]
+  },
+  "dysgraphia": {
+    "dictated_sentences": [
+      {
+        "id": "ds1",
+        "level": "simple",
+        "text": "સૂરજ ખૂબ ગરમ છે."
+      },
+      {
+        "id": "ds2",
+        "level": "complex",
+        "text": "ઝડપી બદામી શિયાળ આળસુ કૂતરા પરથી કૂદે છે."
+      }
+    ]
+  }
+}

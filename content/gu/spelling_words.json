@@ -1,0 +1,34 @@
+{
+  "language": "Gujarati",
+  "code": "gu",
+  "words": [
+    {
+      "target": "બિલાડી",
+      "type": "real"
+    },
+    {
+      "target": "વહાણ",
+      "type": "real"
+    },
+    {
+      "target": "દેડકો",
+      "type": "real"
+    },
+    {
+      "target": "કૂદકો",
+      "type": "real"
+    },
+    {
+      "target": "રાત",
+      "type": "real"
+    },
+    {
+      "target": "ડ્રિમ્પ",
+      "type": "pseudo"
+    },
+    {
+      "target": "સ્પ્લિંગ",
+      "type": "pseudo"
+    }
+  ]
+}

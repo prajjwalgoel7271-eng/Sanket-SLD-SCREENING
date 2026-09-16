@@ -1,0 +1,158 @@
+{
+  "language": "Gujarati",
+  "code": "gu",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "કયો શબ્દ 'બિલાડી' સાથે પ્રાસ બેસાડે છે?",
+      "target_word": "પીલાડી",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "પીલાડી",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "કૂતરો",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "સૂરજ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "કયો શબ્દ 'તારા' સાથે પ્રાસ બેસાડે છે?",
+      "target_word": "કારા",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "કારા",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "પાણી",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "માછલી",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "કયો શબ્દ 'રાત' સાથે પ્રાસ બેસાડે છે?",
+      "target_word": "વાત",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "વાત",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "દડો",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ઝાડ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "કયો શબ્દ /સ/ ના અવાજથી શરૂ થાય છે?",
+      "target_word": "સૂરજ",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "સૂરજ",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "ચાંદ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "ઝાડ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "ડાબી તરફના તારાથી જમણી તરફના તારા સુધી વચ્ચેની રેખા પર આંગળી ફેરવો!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

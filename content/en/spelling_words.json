@@ -1,0 +1,41 @@
+{
+  "language": "English",
+  "code": "en",
+  "words": [
+    {
+      "target": "cat",
+      "phonetic_variants": ["kat", "katt", "cet"],
+      "type": "real"
+    },
+    {
+      "target": "ship",
+      "phonetic_variants": ["schip", "shp", "chip"],
+      "type": "real"
+    },
+    {
+      "target": "frog",
+      "phonetic_variants": ["phrog", "frawg", "freg"],
+      "type": "real"
+    },
+    {
+      "target": "jump",
+      "phonetic_variants": ["gump", "jup", "jumpp"],
+      "type": "real"
+    },
+    {
+      "target": "night",
+      "phonetic_variants": ["nite", "niet", "nit"],
+      "type": "real"
+    },
+    {
+      "target": "drimp",
+      "phonetic_variants": ["drymp", "dremp"],
+      "type": "pseudo"
+    },
+    {
+      "target": "spling",
+      "phonetic_variants": ["splyng", "spleng"],
+      "type": "pseudo"
+    }
+  ]
+}

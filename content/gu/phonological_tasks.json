@@ -1,0 +1,102 @@
+{
+  "language": "Gujarati",
+  "code": "gu",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'કામ' શબ્દ સાથે કયો શબ્દ પ્રાસ ધરાવે છે?",
+      "options": [
+        "નામ",
+        "દિવસ",
+        "ઘર"
+      ],
+      "correct": "નામ",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'તારા' શબ્દ સાથે કયો શબ્દ પ્રાસ ધરાવે છે?",
+      "options": [
+        "મારા",
+        "પાણી",
+        "પુસ્તક"
+      ],
+      "correct": "મારા",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'સૂર્ય' શબ્દનો પહેલો અવાજ કયો છે?",
+      "options": [
+        "/સૂ/",
+        "/મ/",
+        "/બ/"
+      ],
+      "correct": "/સૂ/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'રાત' શબ્દનો છેલ્લો અવાજ કયો છે?",
+      "options": [
+        "/ત/",
+        "/બ/",
+        "/ર/"
+      ],
+      "correct": "/ત/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "આ અવાજોને એકસાથે ભેગા કરો: /ક/ - /મ/ - /ળ/",
+      "options": [
+        "કમળ",
+        "કાલ",
+        "મલમ"
+      ],
+      "correct": "કમળ",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'બતક' શબ્દમાં કેટલા અલગ અવાજ છે?",
+      "options": [
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "3",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "કયો શબ્દ અલગ પહેલા અવાજથી શરૂ થાય છે?",
+      "options": [
+        "સસલું",
+        "સફરજન",
+        "કૂતરો"
+      ],
+      "correct": "કૂતરો",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "કયો શબ્દ અલગ અવાજથી સમાપ્ત થાય છે?",
+      "options": [
+        "બસ",
+        "રસ",
+        "કામ"
+      ],
+      "correct": "કામ",
+      "difficulty": "hard"
+    }
+  ]
+}

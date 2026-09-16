@@ -1,0 +1,71 @@
+{
+  "language": "English",
+  "code": "en",
+  "tier": 4,
+  "academic_distress_questionnaire": [
+    {
+      "id": "q1",
+      "text": "I feel anxious or frustrated when asked to read out loud in front of others.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q2",
+      "text": "I need extra time to complete writing tasks compared to my peers.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q3",
+      "text": "I feel overwhelmed when faced with complex multi-step math problems.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q4",
+      "text": "I feel my handwriting or writing speed holds me back despite knowing the answers.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q5",
+      "text": "I avoid reading long passages or books unless absolutely required.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q6",
+      "text": "I make careless errors in calculation even when I understand the concept.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q7",
+      "text": "I experience physical fatigue or tension during timed exams.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q8",
+      "text": "I struggle to organize my thoughts on paper during essay writing.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q9",
+      "text": "I worry that my academic speed does not reflect my true intelligence.",
+      "domain": "academic_distress"
+    },
+    {
+      "id": "q10",
+      "text": "I pretend to understand reading material to avoid asking for help.",
+      "domain": "academic_distress"
+    }
+  ],
+  "options": [
+    {
+      "text": "Never",
+      "score": 0
+    },
+    {
+      "text": "Sometimes",
+      "score": 1
+    },
+    {
+      "text": "Often / Constantly",
+      "score": 2
+    }
+  ]
+}

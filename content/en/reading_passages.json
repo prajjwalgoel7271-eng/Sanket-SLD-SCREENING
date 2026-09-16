@@ -1,0 +1,23 @@
+{
+  "language": "English",
+  "code": "en",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "word_count": 9,
+      "difficulty": "easy"
+    },
+    {
+      "id": "s2",
+      "text": "Sam and his little puppy went to play in the sunny park.",
+      "word_count": 12,
+      "difficulty": "medium"
+    }
+  ],
+  "passage": {
+    "title": "The Friendly Squirrel",
+    "text": "In a big green garden, a little brown squirrel named Pip loved to collect shiny acorns. He ran up the tall oak tree every morning to hide his treasures under the soft green leaves.",
+    "total_words": 34
+  }
+}

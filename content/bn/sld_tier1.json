@@ -1,0 +1,158 @@
+{
+  "language": "Bengali",
+  "code": "bn",
+  "tier": 1,
+  "rhyme_game": [
+    {
+      "id": "r1",
+      "prompt_audio_text": "কোন শব্দটি 'বিড়াল' এর সাথে ছড়া মেলায়?",
+      "target_word": "শিয়াল",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "শিয়াল",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "কুকুর",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "সূর্য",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "prompt_audio_text": "কোন শব্দটি 'তারা' এর সাথে ছড়া মেলায়?",
+      "target_word": "ধারা",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ধারা",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "জল",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "মাছ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "prompt_audio_text": "কোন শব্দটি 'রাত' এর সাথে ছড়া মেলায়?",
+      "target_word": "ভাত",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "ভাত",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "বল",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "গাছ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "prompt_audio_text": "কোন শব্দটি /স/ ধ্বনি দিয়ে শুরু হয়?",
+      "target_word": "সূর্য",
+      "options": [
+        {
+          "id": "opt1",
+          "word": "সূর্য",
+          "emoji": "🎩",
+          "correct": true
+        },
+        {
+          "id": "opt2",
+          "word": "চাঁদ",
+          "emoji": "🐶",
+          "correct": false
+        },
+        {
+          "id": "opt3",
+          "word": "গাছ",
+          "emoji": "☀️",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "subitizing_game": [
+    {
+      "id": "s1",
+      "count": 2,
+      "shape": "⭐",
+      "display_ms": 700
+    },
+    {
+      "id": "s2",
+      "count": 4,
+      "shape": "🍎",
+      "display_ms": 700
+    },
+    {
+      "id": "s3",
+      "count": 1,
+      "shape": "🐱",
+      "display_ms": 700
+    },
+    {
+      "id": "s4",
+      "count": 3,
+      "shape": "⚽",
+      "display_ms": 700
+    }
+  ],
+  "motor_midline": {
+    "instruction": "বাঁ দিকের তারা থেকে ডান দিকের তারা পর্যন্ত মাঝের রেখার উপর দিয়ে আঙুল চালান!",
+    "target_points": [
+      {
+        "x": 10,
+        "y": 50
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 50
+      },
+      {
+        "x": 70,
+        "y": 80
+      },
+      {
+        "x": 90,
+        "y": 50
+      }
+    ]
+  }
+}

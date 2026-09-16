@@ -1,0 +1,54 @@
+{
+  "language": "English",
+  "code": "en",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "wug",
+      "phoneme_target": "w AH g",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "bif",
+      "phoneme_target": "b IH f",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "zot",
+      "phoneme_target": "z AA t",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "plink",
+      "phoneme_target": "p l IH NG k",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "strop",
+      "phoneme_target": "s t r AA p",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "blant",
+      "phoneme_target": "b l AE n t",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "flimber",
+      "phoneme_target": "f l IH m b ER",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "sprottle",
+      "phoneme_target": "s p r AA t AH l",
+      "difficulty": "hard"
+    }
+  ]
+}

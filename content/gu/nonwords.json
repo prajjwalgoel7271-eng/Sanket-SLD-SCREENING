@@ -1,0 +1,54 @@
+{
+  "language": "Gujarati",
+  "code": "gu",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "વુગ",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "બિફ",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "ઝોટ",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "પ્લિંક",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "સ્ટ્રોપ",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "બ્લાન્ટ",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "ફ્લિમ્બર",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "સ્પ્રૉટલ",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

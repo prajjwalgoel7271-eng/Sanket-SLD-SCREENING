@@ -1,0 +1,135 @@
+{
+  "language": "Bhojpuri",
+  "code": "bho",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "लाल",
+      "नीला",
+      "हरियर",
+      "पियर",
+      "बैंगनी",
+      "नारंगी"
+    ],
+    "round2_letters": [
+      "अ",
+      "क",
+      "म",
+      "च",
+      "प",
+      "र",
+      "स",
+      "त"
+    ],
+    "round3_mixed": [
+      "लाल",
+      "नीला",
+      "हरियर",
+      "अ",
+      "क",
+      "म"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "वूग",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "बिफ",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "जोट",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "प्लिंक",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "स्ट्रॉप",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "ब्लैंट",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "गाछ",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "गाछ",
+          "is_target": true
+        },
+        {
+          "text": "घड़ी",
+          "is_target": false
+        },
+        {
+          "text": "सूरज",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "छोट भूअर पिल्ला",
+    "text": "लियो एगो छोट भूअर पिल्ला बा जे एगो शांत गाँव में रहेला। एगो दुपहरिया, लियो के पुरान खलिहान के पाछे एगो भुलाएल बिलाई के बच्चा मिलल। ऊ बिलाई के बच्चा के ओकर माई के पास पहुँचावे खातिर धीरे से भौंकल।",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "लियो कइसन जानवर ह?",
+        "options": [
+          "एगो छोट भूअर पिल्ला",
+          "एगो छोट बिलाई",
+          "एगो बड़हन घोड़ा"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "लियो के बिलाई के बच्चा कहाँ मिलल?",
+        "options": [
+          "एगो पार्क में",
+          "पुरान खलिहान के पाछे",
+          "घर के भीतर"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "लियो बिलाई के बच्चा के मदद कइसे कइलस?",
+        "options": [
+          "भाग के",
+          "धीरे से भौंक के",
+          "गाछ पर चढ़ के"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

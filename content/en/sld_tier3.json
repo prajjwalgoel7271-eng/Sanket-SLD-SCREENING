@@ -1,0 +1,135 @@
+{
+  "language": "English",
+  "code": "en",
+  "tier": 3,
+  "multi_round_ran": {
+    "round1_colors": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow",
+      "Purple",
+      "Orange"
+    ],
+    "round2_letters": [
+      "A",
+      "B",
+      "D",
+      "O",
+      "P",
+      "S",
+      "T",
+      "Z"
+    ],
+    "round3_mixed": [
+      "Red",
+      "Blue",
+      "Green",
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  "adaptive_nonwords": [
+    {
+      "id": "nw1",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "wug",
+      "phonemes": "w-u-g"
+    },
+    {
+      "id": "nw2",
+      "level": 1,
+      "complexity": "nonword",
+      "nonword": "bif",
+      "phonemes": "b-i-f"
+    },
+    {
+      "id": "nw3",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "zot",
+      "phonemes": "z-o-t"
+    },
+    {
+      "id": "nw4",
+      "level": 2,
+      "complexity": "nonword",
+      "nonword": "plink",
+      "phonemes": "p-l-i-n-k"
+    },
+    {
+      "id": "nw5",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "strop",
+      "phonemes": "s-t-r-o-p"
+    },
+    {
+      "id": "nw6",
+      "level": 3,
+      "complexity": "nonword",
+      "nonword": "blant",
+      "phonemes": "b-l-a-n-t"
+    }
+  ],
+  "sight_word_decay": [
+    {
+      "id": "swd1",
+      "target": "plant",
+      "brief_display_ms": 1200,
+      "distractor_task": "Count backwards 10..1",
+      "delayed_choices": [
+        {
+          "text": "plant",
+          "is_target": true
+        },
+        {
+          "text": "clock",
+          "is_target": false
+        },
+        {
+          "text": "bright",
+          "is_target": false
+        }
+      ]
+    }
+  ],
+  "long_comprehension_passage": {
+    "title": "The Brave Little Pup",
+    "text": "Leo is a small brown puppy who lives in a quiet village. One afternoon, Leo found a lost kitten behind the old barn. He barked gently to guide the kitten back to its mother.",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What kind of animal is Leo?",
+        "options": [
+          "A small brown puppy",
+          "A little kitten",
+          "A big horse"
+        ],
+        "correct": 0
+      },
+      {
+        "id": "q2",
+        "question": "Where did Leo find the kitten?",
+        "options": [
+          "In a park",
+          "Behind the old barn",
+          "Inside the house"
+        ],
+        "correct": 1
+      },
+      {
+        "id": "q3",
+        "question": "How did Leo guide the kitten?",
+        "options": [
+          "By running away",
+          "By barking gently",
+          "By climbing a tree"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+}

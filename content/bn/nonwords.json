@@ -1,0 +1,54 @@
+{
+  "language": "Bengali",
+  "code": "bn",
+  "items": [
+    {
+      "id": "n1",
+      "nonword": "ওয়াগ",
+      "phoneme_target": "wug",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n2",
+      "nonword": "বিফ",
+      "phoneme_target": "bif",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n3",
+      "nonword": "জট",
+      "phoneme_target": "zot",
+      "difficulty": "easy"
+    },
+    {
+      "id": "n4",
+      "nonword": "প্লিঙ্ক",
+      "phoneme_target": "plink",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n5",
+      "nonword": "স্ট্রপ",
+      "phoneme_target": "strop",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n6",
+      "nonword": "ব্ল্যান্ট",
+      "phoneme_target": "blant",
+      "difficulty": "medium"
+    },
+    {
+      "id": "n7",
+      "nonword": "ফ্লিম্বার",
+      "phoneme_target": "flimber",
+      "difficulty": "hard"
+    },
+    {
+      "id": "n8",
+      "nonword": "স্প্রোটল",
+      "phoneme_target": "sprottle",
+      "difficulty": "hard"
+    }
+  ]
+}

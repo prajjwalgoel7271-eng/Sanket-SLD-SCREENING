@@ -1,0 +1,38 @@
+{
+  "language": "English",
+  "code": "en",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Latin",
+      "items": ["a", "d", "o", "p", "s", "r", "t", "m", "k", "e"],
+      "target_words": ["a", "d", "o", "p", "s", "r", "t", "m", "k", "e"]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Numeric",
+      "items": ["2", "6", "4", "9", "7", "3", "5", "8", "1"],
+      "target_words": ["two", "six", "four", "nine", "seven", "three", "five", "eight", "one"]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": ["#e74c3c", "#3498db", "#2ecc71", "#f1c40f", "#9b59b6", "#e67e22"],
+      "target_words": ["red", "blue", "green", "yellow", "purple", "orange"]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": ["⭐", "🍎", "🐱", "🚗", "🔑", "⚽"],
+      "target_words": ["star", "apple", "cat", "car", "key", "ball"]
+    }
+  ]
+}

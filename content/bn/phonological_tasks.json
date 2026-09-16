@@ -1,0 +1,102 @@
+{
+  "language": "Bengali",
+  "code": "bn",
+  "tasks": [
+    {
+      "id": "p1",
+      "type": "rhyme_match",
+      "prompt": "'কাজ' শব্দের সাথে কোনটি ছন্দযুক্ত?",
+      "options": [
+        "লাজ",
+        "দিন",
+        "ঘর"
+      ],
+      "correct": "লাজ",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p2",
+      "type": "rhyme_match",
+      "prompt": "'মাথা' শব্দের সাথে কোনটি ছন্দযুক্ত?",
+      "options": [
+        "পাতা",
+        "জল",
+        "বই"
+      ],
+      "correct": "পাতা",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p3",
+      "type": "first_sound",
+      "prompt": "'সূর্য' শব্দের প্রথম ধ্বনি কী?",
+      "options": [
+        "/স/",
+        "/ম/",
+        "/ব/"
+      ],
+      "correct": "/স/",
+      "difficulty": "easy"
+    },
+    {
+      "id": "p4",
+      "type": "last_sound",
+      "prompt": "'রাত' শব্দের শেষ ধ্বনি কী?",
+      "options": [
+        "/ত/",
+        "/ব/",
+        "/র/"
+      ],
+      "correct": "/ত/",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p5",
+      "type": "sound_blending",
+      "prompt": "এই শব্দগুলো একসাথে মেশান: /ক/ - /ল/ - /ম/",
+      "options": [
+        "কলম",
+        "কল",
+        "কমল"
+      ],
+      "correct": "কলম",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p6",
+      "type": "sound_segmentation",
+      "prompt": "'বই' শব্দে কয়টি আলাদা ধ্বনি আছে?",
+      "options": [
+        "২",
+        "৩",
+        "৪"
+      ],
+      "correct": "২",
+      "difficulty": "medium"
+    },
+    {
+      "id": "p7",
+      "type": "odd_one_out",
+      "prompt": "কোন শব্দটি একটি আলাদা প্রথম ধ্বনি দিয়ে শুরু হয়?",
+      "options": [
+        "আপেল",
+        "আকাশ",
+        "কুকুর"
+      ],
+      "correct": "কুকুর",
+      "difficulty": "hard"
+    },
+    {
+      "id": "p8",
+      "type": "odd_one_out",
+      "prompt": "কোন শব্দটি একটি আলাদা ধ্বনি দিয়ে শেষ হয়?",
+      "options": [
+        "বাস",
+        "হাস",
+        "কাজ"
+      ],
+      "correct": "কাজ",
+      "difficulty": "hard"
+    }
+  ]
+}

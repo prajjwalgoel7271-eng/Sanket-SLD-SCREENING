@@ -1,0 +1,108 @@
+{
+  "language": "Gujarati",
+  "code": "gu",
+  "grids": [
+    {
+      "type": "letters",
+      "title": "Rapid Letter Naming (Gujarati)",
+      "instruction": "Name each letter aloud as quickly and accurately as you can.",
+      "script": "Vernacular",
+      "items": [
+        "અ",
+        "ક",
+        "મ",
+        "ચ",
+        "પ",
+        "ર",
+        "સ",
+        "ત",
+        "ન",
+        "લ"
+      ],
+      "target_words": [
+        "અ",
+        "ક",
+        "મ",
+        "ચ",
+        "પ",
+        "ર",
+        "સ",
+        "ત",
+        "ન",
+        "લ"
+      ]
+    },
+    {
+      "type": "digits",
+      "title": "Rapid Digit Naming (Gujarati)",
+      "instruction": "Name each digit aloud as fast as possible.",
+      "script": "Vernacular Numeric",
+      "items": [
+        "૨",
+        "૬",
+        "૪",
+        "૯",
+        "૭",
+        "૩",
+        "૫",
+        "૮",
+        "૧"
+      ],
+      "target_words": [
+        "બે",
+        "છ",
+        "ચાર",
+        "નવ",
+        "સાત",
+        "ત્રણ",
+        "પાંચ",
+        "આઠ",
+        "એક"
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Rapid Color Naming (Gujarati)",
+      "instruction": "Name the color of each box aloud as fast as possible.",
+      "script": "Visual",
+      "items": [
+        "#e74c3c",
+        "#3498db",
+        "#2ecc71",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22"
+      ],
+      "target_words": [
+        "લાલ",
+        "વાદળી",
+        "લીલો",
+        "પીળો",
+        "જાંબલી",
+        "નારંગી"
+      ]
+    },
+    {
+      "type": "objects",
+      "title": "Rapid Object Naming (Gujarati)",
+      "instruction": "Name each object picture aloud as quickly as you can.",
+      "script": "Visual",
+      "items": [
+        "⭐",
+        "🍎",
+        "🐱",
+        "🚗",
+        "🔑",
+        "⚽"
+      ],
+      "target_words": [
+        "તારો",
+        "સફરજન",
+        "બિલાડી",
+        "કાર",
+        "ચાવી",
+        "દડો"
+      ]
+    }
+  ]
+}
